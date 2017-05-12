@@ -1,0 +1,9 @@
+1456116686304	Move compilation units
+1456116726432	Move compilation unit
+1456116869933	Rename field 'balance'
+1456118759296	Rename type 'Account'
+1456118829082	Rename type 'Asset'
+1456118871705	Rename type 'InterestBearing'
+1456163500959	Move compilation unit
+1456163594359	Rename type 'AccountServer'
+1456205925545	Delete element

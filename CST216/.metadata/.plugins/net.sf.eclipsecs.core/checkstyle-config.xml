@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<checkstyle-configurations file-format-version="5.0.0" default-check-configuration="CST216 Example">
+  <check-configuration name="Assignment2" location="internal_config_1459044312907.xml" type="internal" description="Assignment2 CheckStyle"/>
+  <check-configuration name="CST216 Example" location="internal_config_1460594466631.xml" type="internal" description="CST216 Example, for documentation only."/>
+</checkstyle-configurations>

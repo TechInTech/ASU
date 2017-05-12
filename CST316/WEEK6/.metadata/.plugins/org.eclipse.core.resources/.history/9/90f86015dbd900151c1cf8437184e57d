@@ -1,0 +1,47 @@
+package server;
+
+import banking.interfaces.IAccountServer;
+
+public class AccountServerFactory   //CST316 TASK 3 ADDSINGLETON
+{
+	protected static AccountServerFactory singleton = null; //CST316 TASK 3 ADDSINGLETON
+	
+	protected AccountServerFactory() { //CST316 TASK 3 ADDSINGLETON
+	}
+
+	public static AccountServerFactory getMe() //CST316 TASK 3 ADDSINGLETON
+	{
+		if (singleton == null) 
+		{
+			singleton = new AccountServerFactory();
+		}
+		return singleton;
+	}
+	
+	public IAccountServer getAccountServer() {
+		return new ServerSolution();
+	}
+}
+
+
+public class SingleObject 
+{
+
+	   //create an object of SingleObject
+	   private static SingleObject instance = new SingleObject();
+ 
+	   //make the constructor private so that this class cannot be
+	   //instantiated
+	   private SingleObject(){}
+
+	   //Get the only object available
+	   public static SingleObject getInstance()
+	   {
+	      return instance;
+	   }
+
+	   public void showMessage()
+	   {
+	      System.out.println("Hello World!");
+	   }
+}

@@ -1,0 +1,13 @@
+package server;
+
+import banking.interfaces.IAccountServer;
+
+public class AccountServerFactory {
+
+	public AccountServerFactory() {
+	}
+
+	public IAccountServer getAccountServer() {
+		return new ServerSolution();
+	}
+}

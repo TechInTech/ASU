@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../.resources/report.gif" type="image/gif"/><title>PostProcess.java</title><link rel="stylesheet" href="../../../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../.sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">Main (Apr 23, 2016 4:02:49 PM)</a> &gt; <a href="../../index.html" class="el_group">MagicSquare</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">core</a> &gt; <span class="el_source">PostProcess.java</span></div><h1>PostProcess.java</h1><pre class="source lang-java linenums">package core;
+
+import java.util.ArrayList;
+
+public class PostProcess {
+	int z;
+	int theSize;
+	boolean iValid;	
+	int row;
+	int col;
+	boolean iMagic;
+	ArrayList&lt;Integer&gt; nL;
+	int SUM;  //rows
+	int SUM2; //columns
+	int SUMLR;//LR diag
+	int SUMRL;//RL diag
+	int array1[];
+	int Array1[];
+	int array2[][];
+	int Array2[][];
+	
+	/**
+	 * Method: Constructor
+	 * @param MS	MagicSquare
+	 */
+<span class="fc" id="L26">	public PostProcess(MagicSquare MS) {</span>
+<span class="fc" id="L27">		this.z = 0;</span>
+<span class="fc" id="L28">		this.iValid = MS.isValid();</span>
+<span class="fc" id="L29">		this.theSize = MS.getN();</span>
+<span class="fc" id="L30">		this.row = MS.getRow();</span>
+<span class="fc" id="L31">		this.col = MS.getCol();</span>
+<span class="fc" id="L32">		this.iMagic = MS.isMagic();</span>
+<span class="fc" id="L33">		this.nL = new ArrayList&lt;Integer&gt;();</span>
+<span class="fc" id="L34">		this.SUM = MS.getSum(); //Get row sum</span>
+<span class="fc" id="L35">		this.SUM2 = MS.getSum2();//Get column sum</span>
+<span class="fc" id="L36">		this.nL = MS.get1DArray();</span>
+		
+<span class="fc" id="L38">	}//Constructor</span>
+	
+	/** Method: oneD2twoD()
+	 *  My algorithm for doing diagonal
+	 *  summing calls for a 2D array.
+	 *  @return	this.Get_array2()	int[][]
+	 */
+	@SuppressWarnings(&quot;unused&quot;)
+	public int[][] oneD2twoD() {
+<span class="fc" id="L47">		int z = 0;</span>
+<span class="fc" id="L48">		int SizeX = this.theSize;</span>
+<span class="fc" id="L49">		int r = this.row;</span>
+<span class="fc" id="L50">		int c = this.col;</span>
+<span class="fc" id="L51">		int array1[] = new int[SizeX];</span>
+<span class="fc" id="L52">		int Array1[] = new int[SizeX];</span>
+<span class="fc" id="L53">		int array2[][] = new int[r][c];</span>
+<span class="fc" id="L54">		int Array2[][] = new int[r][c];</span>
+		
+<span class="fc bfc" id="L56" title="All 2 branches covered.">		for(int nL2 : this.nL) {</span>
+<span class="fc" id="L57">			array1[z] = nL2;</span>
+<span class="fc" id="L58">			z++;</span>
+	    }
+<span class="fc" id="L60">		this.set1DArray(array1);</span>
+		
+<span class="fc" id="L62">		z = 0;		</span>
+<span class="fc bfc" id="L63" title="All 2 branches covered.">		for(int a = 0; a &lt; r; a++) {</span>
+<span class="fc bfc" id="L64" title="All 2 branches covered.">			for(int b = 0; b &lt; c; b++) {</span>
+<span class="fc" id="L65">				array2[a][b] = array1[(b*r) + a];</span>
+			}
+		}
+		
+<span class="fc" id="L69">		this.set2DArray(array2);</span>
+<span class="fc" id="L70">		return(this.Get_array2());//This is the 2D array</span>
+	}//oneD2twoD()
+	
+	/**
+	 * Method: Get2D_Reverse()
+	 * @return	this.Get_Rev_array2()	int[][]
+	 */
+	@SuppressWarnings(&quot;unused&quot;)
+	public int[][] Get2D_Reverse() {
+		/** Create a 2D array in reverse
+		 *  to compute rigth-to-left diagonal
+		 */
+<span class="fc" id="L82">		int z = 0;</span>
+<span class="fc" id="L83">		int SizeX = this.theSize;</span>
+<span class="fc" id="L84">		int r = this.row;</span>
+<span class="fc" id="L85">		int c = this.col;</span>
+<span class="fc" id="L86">		int Array1[] = new int[SizeX];</span>
+<span class="fc" id="L87">		int Array2[][] = new int[r][c];</span>
+		
+<span class="fc" id="L89">		Array1 = this.reverseArray(this.array1); //Reverse the array</span>
+<span class="fc" id="L90">		this.setR1DArray(Array1);</span>
+		
+<span class="fc bfc" id="L92" title="All 2 branches covered.">		for(int a = 0; a &lt; r; a++) {</span>
+<span class="fc bfc" id="L93" title="All 2 branches covered.">			for(int b = 0; b &lt; c; b++) {</span>
+<span class="fc" id="L94">				Array2[a][b] = Array1[(b*r) + a];</span>
+			}
+		}
+<span class="fc" id="L97">		this.set_Rev_2DArray(Array2);</span>
+<span class="fc" id="L98">		return(this.Get_Rev_array2());</span>
+	}
+	
+	/**
+	 * Method reverseArray()
+	 * @param array1	int[]
+	 * @return array2	int[]
+	 */
+	public int[] reverseArray(int[] array1) {
+<span class="fc" id="L107">	    int index = array1.length;</span>
+<span class="fc" id="L108">	    int[] array2 = new int[index];</span>
+	    
+<span class="fc bfc" id="L110" title="All 2 branches covered.">	    for(int i : array1) {</span>
+<span class="fc" id="L111">	        array2[index-1]= i;</span>
+<span class="fc" id="L112">	        index--;</span>
+	    }
+<span class="fc" id="L114">	    return(array2);    </span>
+	}	
+	
+	/**
+	 * Method: set1DArray()
+	 * @param t_Array	int[]
+	 */
+	public void set1DArray(int[] t_Array) {
+<span class="fc" id="L122">		this.array1 = t_Array;</span>
+<span class="fc" id="L123">	}</span>
+	
+	/**
+	 * Method: Get_1D_array()
+	 * @return this.array1	int[]
+	 */
+	public int[] Get_1D_array() {
+<span class="fc" id="L130">		return(this.array1);</span>
+	}
+	
+	/**
+	 * Method: setR1DArray()
+	 * @param t_Array	int[]
+	 */
+	public void setR1DArray(int[] t_Array) {
+<span class="fc" id="L138">		this.Array1 = t_Array;</span>
+<span class="fc" id="L139">	}//Reverse1D setter</span>
+	
+	/**
+	 * Method: Get_R1D_array()
+	 * @return	this.Array1	int[]
+	 */
+	public int[] Get_R1D_array() {
+<span class="nc" id="L146">		return(this.Array1);</span>
+	}//Reverse1D Getter
+	
+	/**
+	 * Method: set2DArray()
+	 * @param t_Array	int[][]
+	 */
+	public void set2DArray(int[][] t_Array) {
+<span class="fc" id="L154">		this.array2 = t_Array;</span>
+<span class="fc" id="L155">	}</span>
+	
+	/**
+	 * Method: Get_array2()
+	 * @return this.array2	int[][]
+	 */
+	public int[][] Get_array2() {
+<span class="fc" id="L162">		return(this.array2);</span>
+	}
+	
+	/**
+	 * Method: set_Rev_2DArray
+	 * @param t_Array int[][]
+	 */
+	public void set_Rev_2DArray(int[][] t_Array) {
+<span class="fc" id="L170">		this.Array2 = t_Array;</span>
+<span class="fc" id="L171">	}</span>
+	
+	/**
+	 * Method: Get_Rev_array2()
+	 * @return this.Array2 int[][]
+	 */
+	public int[][] Get_Rev_array2() {
+<span class="fc" id="L178">		return(this.Array2);</span>
+	}
+	
+	/**
+	 * Method: summingDiag()
+	 * @return iEqual	boolean
+	 */
+	
+	@SuppressWarnings(&quot;unused&quot;)
+	public boolean summingDiag0() {		
+<span class="fc" id="L188">		int r = this.row;</span>
+<span class="fc" id="L189">		int c = this.col;		</span>
+		
+<span class="fc" id="L191">		int sum = 0; //local sum</span>
+		boolean iEqual;
+		
+				
+<span class="fc bfc" id="L195" title="All 2 branches covered.">		for(int a = 0; a &lt; r; a++) {</span>
+<span class="fc bfc" id="L196" title="All 2 branches covered.">			for(int b = 0; b &lt; c; b++) {</span>
+<span class="fc bfc" id="L197" title="All 2 branches covered.">				if(b == a) {</span>
+<span class="fc" id="L198">					sum += this.array2[a][b];</span>
+				}				
+			}
+		}
+<span class="fc" id="L202">		this.setSUMLR(sum);</span>
+<span class="pc bpc" id="L203" title="1 of 2 branches missed.">		return(iEqual = (sum == this.SUM));</span>
+	}//Method bracket
+	
+	@SuppressWarnings(&quot;unused&quot;)
+	public boolean summingDiag1() {		
+<span class="fc" id="L208">		int r = this.row;</span>
+<span class="fc" id="L209">		int c = this.col;</span>
+		
+<span class="fc" id="L211">		int sum = 0; //local sum</span>
+		boolean iEqual;
+		
+				
+<span class="fc bfc" id="L215" title="All 2 branches covered.">		for(int a = 0; a &lt; r; a++) {</span>
+<span class="fc bfc" id="L216" title="All 2 branches covered.">			for(int b = 0; b &lt; c; b++) {</span>
+<span class="fc bfc" id="L217" title="All 2 branches covered.">				if(b == a) {</span>
+<span class="fc" id="L218">					sum += this.Array2[a][b];</span>
+				}				
+			}
+		}
+<span class="fc" id="L222">		this.setSUMRL(sum);</span>
+<span class="pc bpc" id="L223" title="1 of 2 branches missed.">		return(iEqual = (sum == this.SUM));</span>
+	}//Method bracket
+	
+	/**
+	 * Method: setSUMLR()
+	 * @param s		int
+	 */
+	public void setSUMLR(int s) {
+<span class="fc" id="L231">		this.SUMLR = s;</span>
+<span class="fc" id="L232">	}</span>
+	
+	/**
+	 * Method: getSUMLR()
+	 * @return	this.SUMLR	int
+	 */
+	public int getSUMLR() {
+<span class="fc" id="L239">		return(this.SUMLR);</span>
+	}
+	
+	/**
+	 * Method: setSUMRL()
+	 * @param s		int
+	 */
+	public void setSUMRL(int s) {
+<span class="fc" id="L247">		this.SUMRL = s;</span>
+<span class="fc" id="L248">	}</span>
+	
+	/**
+	 * Method: getSUMRL()
+	 * @return this.SUMRL	int
+	 */
+	public int getSUMRL() {
+<span class="fc" id="L255">		return(this.SUMRL);</span>
+	}
+}//Class bracket
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.6.201602180812</span>Main (Apr 23, 2016 4:02:49 PM)</div></body></html>

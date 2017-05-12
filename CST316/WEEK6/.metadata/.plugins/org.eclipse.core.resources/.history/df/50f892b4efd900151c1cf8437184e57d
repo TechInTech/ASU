@@ -1,0 +1,37 @@
+package server;
+
+import banking.interfaces.AAccount;
+
+import java.util.Observable;
+import java.util.Observer;
+
+class TheObservable extends Observable implements Runnable {
+
+	public TheObservable() {
+		;
+	}
+	
+	public void start() {
+	    new Thread(this).start();
+	  }
+
+	@Override
+	public void run() 
+	{
+		int count = 0;
+		try 
+	    {
+	      Thread.sleep(3000);
+	    }
+	    catch (InterruptedException e) 
+	    {
+	      e.printStackTrace();
+	    }
+	    count++;
+	    setChanged();
+	    notifyObservers(new AAccount acc(count));
+		
+	}
+
+	
+}

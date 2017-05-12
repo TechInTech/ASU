@@ -1,0 +1,14 @@
+package server;
+
+import banking.interfaces.IAccountServer;
+
+public class AccountServerFactory {
+
+	//ACTIVITY 2-1 SMELL WITHIN A CLASS <Dead Code>
+	//public AccountServerFactory() {
+	//}
+
+	public IAccountServer getAccountServer() {
+		return new ServerSolution();
+	}
+}

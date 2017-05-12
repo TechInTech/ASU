@@ -1,0 +1,9 @@
+package server;
+
+public class TheObservable {
+
+	public TheObservable() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

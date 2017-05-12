@@ -1,0 +1,15 @@
+Convert to assembly:
+if (i == j) 							bne $s3, $s4, Else
+	f = g+h; 							add $s0, $s1, $s2
+else 									j Exit
+	f = g-h; 							Else: sub $s0, $s1, $s2
+										Exit:
+										
+										
+										
+Convert to assembly:
+if (j == k) 							bne $s3, $s4, Else
+	a = b + c; 							add $s0, $s1, $s2
+else 									j Exit
+	a = b - c; 							Else: sub $s0, $s1, $s2
+										Exit:

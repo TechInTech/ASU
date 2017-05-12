@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="4" timestamp="1456198266317" analysisTimestamp="1456198253942" release="">
+  <Project projectName="RefactoringLabWeek6">
+    <Jar>C:\CST316\WEEK6\RefactoringLabWeek6\bin</Jar>
+    <AuxClasspathEntry>C:\CST316\WEEK6\RefactoringLabWeek6\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\JUnit\hamcrest-core-1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\JUnit\jacocoant.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\JUnit\junit-4.12.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\jhotdraw6\jhotdraw.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jdk1.8.0_72\jre\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>C:\CST316\WEEK6\RefactoringLabWeek6\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" first="4">
+    <Class classname="gui.MainFrame">
+      <SourceLine classname="gui.MainFrame" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java"/>
+    </Class>
+    <Method classname="gui.MainFrame" name="constructForm" signature="()V" isStatic="false">
+      <SourceLine classname="gui.MainFrame" start="66" end="95" startBytecode="0" endBytecode="451" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java"/>
+    </Method>
+    <Field classname="gui.MainFrame" name="props" signature="Ljava/util/Properties;" isStatic="false">
+      <SourceLine classname="gui.MainFrame" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java"/>
+    </Field>
+    <SourceLine classname="gui.MainFrame" start="66" end="66" startBytecode="11" endBytecode="11" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java"/>
+    <SourceLine classname="gui.MainFrame" start="66" end="66" startBytecode="11" endBytecode="11" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1" last="3" removedByChange="true">
+    <Class classname="gui.MainFrame">
+      <SourceLine classname="gui.MainFrame" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java"/>
+    </Class>
+    <Method classname="gui.MainFrame" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="gui.MainFrame" start="42" end="60" startBytecode="0" endBytecode="218" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java"/>
+    </Method>
+    <Class classname="java.io.InputStream" role="CLASS_REFTYPE">
+      <SourceLine classname="java.io.InputStream" sourcefile="InputStream.java" sourcepath="java/io/InputStream.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="gui.MainFrame" start="51" end="51" startBytecode="36" endBytecode="36" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="gui.MainFrame" start="52" end="52" startBytecode="40" endBytecode="40" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="gui.MainFrame" start="54" end="54" startBytecode="55" endBytecode="55" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="gui.MainFrame" start="55" end="55" startBytecode="56" endBytecode="56" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="gui.MainFrame" start="56" end="56" startBytecode="60" endBytecode="60" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{InputStream x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS" first="4">
+    <Class classname="gui.MainFrame">
+      <SourceLine classname="gui.MainFrame" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java"/>
+    </Class>
+    <Field classname="gui.MainFrame" name="myServer" signature="Lbanking/interfaces/IAccountServer;" isStatic="false">
+      <SourceLine classname="gui.MainFrame" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java"/>
+    </Field>
+    <SourceLine classname="gui.MainFrame$DisplayHandler" start="99" end="99" startBytecode="4" endBytecode="4" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java"/>
+  </BugInstance>
+  <BugInstance type="UWF_UNWRITTEN_FIELD" priority="2" rank="12" abbrev="UwF" category="CORRECTNESS" first="4">
+    <Class classname="gui.MainFrame">
+      <SourceLine classname="gui.MainFrame" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java"/>
+    </Class>
+    <Field classname="gui.MainFrame" name="props" signature="Ljava/util/Properties;" isStatic="false">
+      <SourceLine classname="gui.MainFrame" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java"/>
+    </Field>
+    <SourceLine classname="gui.MainFrame" start="66" end="66" startBytecode="6" endBytecode="6" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java"/>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" first="4">
+    <Class classname="gui.MainFrame$DisplayHandler">
+      <SourceLine classname="gui.MainFrame$DisplayHandler" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java"/>
+    </Class>
+    <Method classname="gui.MainFrame$DisplayHandler" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="gui.MainFrame$DisplayHandler" start="99" end="109" startBytecode="0" endBytecode="261" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java"/>
+    </Method>
+    <Field classname="gui.MainFrame" name="myServer" signature="Lbanking/interfaces/IAccountServer;" isStatic="false">
+      <SourceLine classname="gui.MainFrame" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java"/>
+    </Field>
+    <SourceLine classname="gui.MainFrame$DisplayHandler" start="99" end="99" startBytecode="7" endBytecode="7" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java"/>
+    <SourceLine classname="gui.MainFrame$DisplayHandler" start="99" end="99" startBytecode="7" endBytecode="7" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java"/>
+  </BugInstance>
+  <BugInstance type="NP_UNWRITTEN_FIELD" priority="2" rank="8" abbrev="NP" category="CORRECTNESS" first="4">
+    <Class classname="gui.MainFrame$NewAccountHandler">
+      <SourceLine classname="gui.MainFrame$NewAccountHandler" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java"/>
+    </Class>
+    <Method classname="gui.MainFrame$NewAccountHandler" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="gui.MainFrame$NewAccountHandler" start="115" end="120" startBytecode="0" endBytecode="154" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java"/>
+    </Method>
+    <Field classname="gui.MainFrame" name="myServer" signature="Lbanking/interfaces/IAccountServer;" isStatic="false">
+      <SourceLine classname="gui.MainFrame" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java"/>
+    </Field>
+    <SourceLine classname="gui.MainFrame$NewAccountHandler" start="119" end="119" startBytecode="51" endBytecode="51" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java"/>
+    <SourceLine classname="gui.MainFrame$NewAccountHandler" start="119" end="119" startBytecode="51" endBytecode="51" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE" first="4">
+    <Class classname="server.AccountServerFactory">
+      <SourceLine classname="server.AccountServerFactory" sourcefile="AccountServerFactory.java" sourcepath="server/AccountServerFactory.java"/>
+    </Class>
+    <Field classname="server.AccountServerFactory" name="singleton" signature="Lserver/AccountServerFactory;" isStatic="true">
+      <SourceLine classname="server.AccountServerFactory" sourcefile="AccountServerFactory.java" sourcepath="server/AccountServerFactory.java"/>
+    </Field>
+    <SourceLine classname="server.AccountServerFactory" start="7" end="7" startBytecode="1" endBytecode="1" sourcefile="AccountServerFactory.java" sourcepath="server/AccountServerFactory.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 22 Feb 2016 19:30:20 -0800" total_classes="15" referenced_classes="297" total_bugs="6" total_size="319" num_packages="4" java_version="1.8.0_72" vm_version="25.72-b15" cpu_seconds="38.47" clock_seconds="12.43" peak_mbytes="706.71" alloc_mbytes="910.50" gc_seconds="0.05" priority_2="6">
+    <PackageStats package="banking.interfaces" total_bugs="0" total_types="3" total_size="34">
+      <ClassStats class="banking.interfaces.AAccount" sourceFile="AAccount.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="banking.interfaces.IAccountServer" sourceFile="IAccountServer.java" interface="true" size="7" bugs="0"/>
+      <ClassStats class="banking.interfaces.IAsset" sourceFile="IAsset.java" interface="true" size="3" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="gui" total_bugs="5" total_types="6" total_size="98" priority_2="5">
+      <ClassStats class="gui.Main" sourceFile="Main.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="gui.MainFrame" sourceFile="MainFrame.java" interface="false" size="39" bugs="2" priority_2="2"/>
+      <ClassStats class="gui.MainFrame$BalanceChecker" sourceFile="MainFrame.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="gui.MainFrame$DisplayHandler" sourceFile="MainFrame.java" interface="false" size="13" bugs="2" priority_2="2"/>
+      <ClassStats class="gui.MainFrame$FrameHandler" sourceFile="MainFrame.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="gui.MainFrame$NewAccountHandler" sourceFile="MainFrame.java" interface="false" size="10" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="primitive.core" total_bugs="0" total_types="3" total_size="60">
+      <ClassStats class="primitive.core.Checking" sourceFile="Checking.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="primitive.core.DepositParameter" sourceFile="DepositParameter.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="primitive.core.Savings" sourceFile="Savings.java" interface="false" size="26" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="server" total_bugs="1" total_types="3" total_size="127" priority_2="1">
+      <ClassStats class="server.AccountServerFactory" sourceFile="AccountServerFactory.java" interface="false" size="13" bugs="1" priority_2="1"/>
+      <ClassStats class="server.ServerSolution" sourceFile="ServerSolution.java" interface="false" size="79" bugs="0"/>
+      <ClassStats class="server.ServerTest" sourceFile="ServerTest.java" interface="false" size="35" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1634" invocations="1483" avgMicrosecondsPerInvocation="1101" maxMicrosecondsPerInvocation="41078" standardDeviationMircosecondsPerInvocation="2511"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="1586" invocations="2" avgMicrosecondsPerInvocation="793360" maxMicrosecondsPerInvocation="876655" standardDeviationMircosecondsPerInvocation="83295"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1357" invocations="1486" avgMicrosecondsPerInvocation="913" maxMicrosecondsPerInvocation="167704" standardDeviationMircosecondsPerInvocation="5087"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="1168" invocations="297" avgMicrosecondsPerInvocation="3934" maxMicrosecondsPerInvocation="50638" standardDeviationMircosecondsPerInvocation="7336"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="1117" invocations="297" avgMicrosecondsPerInvocation="3763" maxMicrosecondsPerInvocation="56521" standardDeviationMircosecondsPerInvocation="7161"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="694" invocations="678" avgMicrosecondsPerInvocation="1024" maxMicrosecondsPerInvocation="35827" standardDeviationMircosecondsPerInvocation="1862"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="300" invocations="297" avgMicrosecondsPerInvocation="1010" maxMicrosecondsPerInvocation="16581" standardDeviationMircosecondsPerInvocation="1882"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="275" invocations="297" avgMicrosecondsPerInvocation="928" maxMicrosecondsPerInvocation="45650" standardDeviationMircosecondsPerInvocation="4957"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="268" invocations="297" avgMicrosecondsPerInvocation="904" maxMicrosecondsPerInvocation="56999" standardDeviationMircosecondsPerInvocation="3797"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="233" invocations="362" avgMicrosecondsPerInvocation="646" maxMicrosecondsPerInvocation="85894" standardDeviationMircosecondsPerInvocation="4540"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="217" invocations="297" avgMicrosecondsPerInvocation="732" maxMicrosecondsPerInvocation="21285" standardDeviationMircosecondsPerInvocation="1827"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="205" invocations="297" avgMicrosecondsPerInvocation="692" maxMicrosecondsPerInvocation="8215" standardDeviationMircosecondsPerInvocation="1051"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="166" invocations="297" avgMicrosecondsPerInvocation="561" maxMicrosecondsPerInvocation="6214" standardDeviationMircosecondsPerInvocation="1002"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1456148046750" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1456148046761" release="" codeSize="325" numClasses="16"/>
+    <AppVersion sequence="2" timestamp="1456161289490" release="" codeSize="325" numClasses="16"/>
+    <AppVersion sequence="3" timestamp="1456161352722" release="" codeSize="325" numClasses="16"/>
+  </History>
+</BugCollection>

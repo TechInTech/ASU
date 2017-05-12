@@ -1,0 +1,24 @@
+package server;
+
+import banking.interfaces.IAccountServer;
+
+public class AccountServerFactory {  //CST316 TASK 3 ADDSINGLETON
+	
+	protected static AccountServerFactory singleton = null; //CST316 TASK 3 ADDSINGLETON
+	
+	protected AccountServerFactory() { //CST316 TASK 3 ADDSINGLETON
+		
+	}
+
+	public static AccountServerFactory getInstance() {//CST316 TASK 3 ADDSINGLETON
+	
+		if (singleton == null) {
+			singleton = new AccountServerFactory();
+		}		
+		return singleton;
+	}
+	
+	public IAccountServer getAccountServer() {
+		return new ServerSolution();
+	}
+}

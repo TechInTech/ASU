@@ -1,0 +1,36 @@
+import java.util.*;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] tN = {0,1,0};		
+		
+		@SuppressWarnings("unused")
+		int z = lastZero(tN);
+		System.out.println("lastZero() returned: " + z);
+
+	}
+	
+	public static int lastZero(int[] x)
+	{
+		// Effects: if x==null throw NullPointerException
+		// else return the index of the LAST 0 in x.
+		// Return -1 if 0 does not occur in x
+		int pos = 0;
+		
+		for (int i = pos; i < x.length; i++)
+		{
+			if(x[i] == 0)
+			{ 
+				pos = i;				
+			}
+			
+			if(i == (x.length - 1))
+			{
+				return(pos);
+			}
+		}
+		return -1;
+	}
+}

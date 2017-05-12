@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../.resources/report.gif" type="image/gif"/><title>PostProcessTestC1C2C3.java</title><link rel="stylesheet" href="../../../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../.sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">Main (Apr 23, 2016 4:02:49 PM)</a> &gt; <a href="../../index.html" class="el_group">MagicSquare</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">test</a> &gt; <span class="el_source">PostProcessTestC1C2C3.java</span></div><h1>PostProcessTestC1C2C3.java</h1><pre class="source lang-java linenums">package test;
+
+import static org.junit.Assert.*;
+
+import java.util.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+import core.MagicSquare;
+import core.PostProcess;
+
+@SuppressWarnings(&quot;unused&quot;)
+<span class="nc" id="L15">public class PostProcessTestC1C2C3 {</span>
+	private MagicSquare mSquareTest;
+	private MagicSquare mS1;
+	private MagicSquare mS2;
+	private PostProcess PProc1;
+	private PostProcess PProc2;
+	private PostProcess PProc3;
+	
+	@Before
+	public void setUp() throws Exception {
+<span class="nc" id="L25">		ArrayList&lt;Integer&gt; nList = new ArrayList&lt;Integer&gt;(Arrays.asList(8, 1, 6, 3, 5, 7, 4, 9, 2));</span>
+<span class="nc" id="L26">		mSquareTest = new MagicSquare(nList);</span>
+<span class="nc" id="L27">	}</span>
+
+	@After
+	public void tearDown() throws Exception {
+<span class="nc" id="L31">		mSquareTest = null;</span>
+<span class="nc" id="L32">		mS1 = null;</span>
+<span class="nc" id="L33">		mS2 = null;</span>
+<span class="nc" id="L34">		PProc1 = null;</span>
+<span class="nc" id="L35">		PProc2 = null;</span>
+<span class="nc" id="L36">		PProc3 = null;</span>
+<span class="nc" id="L37">	}</span>
+	
+	
+	@Test
+	public void testGetSUMP() {
+<span class="nc" id="L42">		ArrayList&lt;Integer&gt; nL = new ArrayList&lt;Integer&gt;(Arrays.asList(8, 1, 6, 3, 5, 7, 4, 9, 2));</span>
+<span class="nc" id="L43">		mS2 = new MagicSquare(nL);	</span>
+<span class="nc" id="L44">		PProc1 = new PostProcess(mSquareTest);</span>
+		
+<span class="nc" id="L46">		int SUM_V = 0;</span>
+<span class="nc" id="L47">		int SUM_H = 0;</span>
+<span class="nc" id="L48">		int SUM_LR_DIAG = 0;</span>
+<span class="nc" id="L49">		int SUM_RL_DIAG = 0;</span>
+<span class="nc" id="L50">		int theSize = mS2.getN();</span>
+<span class="nc" id="L51">		int row = mS2.getRow();</span>
+<span class="nc" id="L52">		int col = mS2.getCol();</span>
+<span class="nc" id="L53">		int array1[] = new int[theSize];</span>
+<span class="nc" id="L54">		int Array1[] = new int[theSize];</span>
+<span class="nc" id="L55">		int array2[][] = new int[row][col];</span>
+<span class="nc" id="L56">		int Array2[][] = new int[row][col];</span>
+<span class="nc" id="L57">		boolean iValid = false;		</span>
+<span class="nc" id="L58">		boolean iMagic = false;</span>
+		
+<span class="nc" id="L60">		iValid = mS2.isValid();</span>
+<span class="nc" id="L61">		iMagic = mS2.isMagic();</span>
+<span class="nc" id="L62">		SUM_H = mS2.getSum();</span>
+<span class="nc" id="L63">		SUM_V = mS2.getSum2();</span>
+<span class="nc" id="L64">		array2 = PProc1.oneD2twoD();</span>
+<span class="nc" id="L65">		array1 = PProc1.Get_1D_array();</span>
+<span class="nc" id="L66">		Array1 = PProc1.reverseArray(array1);</span>
+<span class="nc" id="L67">		Array2 = PProc1.Get2D_Reverse();</span>
+		
+<span class="nc" id="L69">		boolean Sdiag1 = PProc1.summingDiag0();</span>
+<span class="nc" id="L70">		boolean Sdiag2 = PProc1.summingDiag1();</span>
+<span class="nc" id="L71">		int expAns = 15;</span>
+		
+<span class="nc" id="L73">		assertEquals(SUM_H,expAns);//Sum, row.</span>
+<span class="nc" id="L74">	}</span>
+	
+	@Test
+	public void testGetSUM2P() {
+<span class="nc" id="L78">		ArrayList&lt;Integer&gt; nL = new ArrayList&lt;Integer&gt;(Arrays.asList(8, 1, 6, 3, 5, 7, 4, 9, 2));</span>
+<span class="nc" id="L79">		mS2 = new MagicSquare(nL);	</span>
+<span class="nc" id="L80">		PProc1 = new PostProcess(mSquareTest);</span>
+		
+<span class="nc" id="L82">		int SUM_V = 0;</span>
+<span class="nc" id="L83">		int SUM_H = 0;</span>
+<span class="nc" id="L84">		int SUM_LR_DIAG = 0;</span>
+<span class="nc" id="L85">		int SUM_RL_DIAG = 0;</span>
+<span class="nc" id="L86">		int theSize = mS2.getN();</span>
+<span class="nc" id="L87">		int row = mS2.getRow();</span>
+<span class="nc" id="L88">		int col = mS2.getCol();</span>
+<span class="nc" id="L89">		int array1[] = new int[theSize];</span>
+<span class="nc" id="L90">		int Array1[] = new int[theSize];</span>
+<span class="nc" id="L91">		int array2[][] = new int[row][col];</span>
+<span class="nc" id="L92">		int Array2[][] = new int[row][col];</span>
+<span class="nc" id="L93">		boolean iValid = false;		</span>
+<span class="nc" id="L94">		boolean iMagic = false;</span>
+		
+<span class="nc" id="L96">		iValid = mS2.isValid();</span>
+<span class="nc" id="L97">		iMagic = mS2.isMagic();</span>
+<span class="nc" id="L98">		SUM_H = mS2.getSum();</span>
+<span class="nc" id="L99">		SUM_V = mS2.getSum2();</span>
+<span class="nc" id="L100">		array2 = PProc1.oneD2twoD();</span>
+<span class="nc" id="L101">		array1 = PProc1.Get_1D_array();</span>
+<span class="nc" id="L102">		Array1 = PProc1.reverseArray(array1);</span>
+<span class="nc" id="L103">		Array2 = PProc1.Get2D_Reverse();</span>
+		
+<span class="nc" id="L105">		boolean Sdiag1 = PProc1.summingDiag0();</span>
+<span class="nc" id="L106">		boolean Sdiag2 = PProc1.summingDiag1();</span>
+		
+<span class="nc" id="L108">		int expAns = 15;</span>
+		
+<span class="nc" id="L110">		assertEquals(SUM_V,expAns);//Sum, column.</span>
+<span class="nc" id="L111">	}</span>
+	
+	@Test
+	public void testGetSUMF() {
+<span class="nc" id="L115">		ArrayList&lt;Integer&gt; nL = new ArrayList&lt;Integer&gt;(Arrays.asList(8, 1, 6, 3, 5, 7, 4, 9, 2));</span>
+<span class="nc" id="L116">		mS2 = new MagicSquare(nL);	</span>
+<span class="nc" id="L117">		PProc1 = new PostProcess(mSquareTest);</span>
+		
+<span class="nc" id="L119">		int SUM_V = 0;</span>
+<span class="nc" id="L120">		int SUM_H = 0;</span>
+<span class="nc" id="L121">		int SUM_LR_DIAG = 0;</span>
+<span class="nc" id="L122">		int SUM_RL_DIAG = 0;</span>
+<span class="nc" id="L123">		int theSize = mS2.getN();</span>
+<span class="nc" id="L124">		int row = mS2.getRow();</span>
+<span class="nc" id="L125">		int col = mS2.getCol();</span>
+<span class="nc" id="L126">		int array1[] = new int[theSize];</span>
+<span class="nc" id="L127">		int Array1[] = new int[theSize];</span>
+<span class="nc" id="L128">		int array2[][] = new int[row][col];</span>
+<span class="nc" id="L129">		int Array2[][] = new int[row][col];</span>
+<span class="nc" id="L130">		boolean iValid = false;		</span>
+<span class="nc" id="L131">		boolean iMagic = false;</span>
+		
+<span class="nc" id="L133">		iValid = mS2.isValid();</span>
+<span class="nc" id="L134">		iMagic = mS2.isMagic();		</span>
+<span class="nc" id="L135">		array2 = PProc1.oneD2twoD();</span>
+<span class="nc" id="L136">		array1 = PProc1.Get_1D_array();</span>
+<span class="nc" id="L137">		Array1 = PProc1.reverseArray(array1);</span>
+<span class="nc" id="L138">		Array2 = PProc1.Get2D_Reverse();</span>
+		
+<span class="nc" id="L140">		boolean Sdiag1 = PProc1.summingDiag0();</span>
+<span class="nc" id="L141">		boolean Sdiag2 = PProc1.summingDiag1();</span>
+<span class="nc" id="L142">		int expAns = 22;</span>
+		
+<span class="nc bnc" id="L144" title="All 2 branches missed.">		assertFalse(mS2.getSum() == expAns);//Sum, row.</span>
+<span class="nc" id="L145">	}</span>
+	
+	@Test
+	public void testGetSUM2F() {
+<span class="nc" id="L149">		ArrayList&lt;Integer&gt; nL = new ArrayList&lt;Integer&gt;(Arrays.asList(8, 1, 6, 3, 5, 7, 4, 9, 2));</span>
+<span class="nc" id="L150">		mS2 = new MagicSquare(nL);	</span>
+<span class="nc" id="L151">		PProc1 = new PostProcess(mSquareTest);</span>
+		
+<span class="nc" id="L153">		int SUM_V = 0;</span>
+<span class="nc" id="L154">		int SUM_H = 0;</span>
+<span class="nc" id="L155">		int SUM_LR_DIAG = 0;</span>
+<span class="nc" id="L156">		int SUM_RL_DIAG = 0;</span>
+<span class="nc" id="L157">		int theSize = mS2.getN();</span>
+<span class="nc" id="L158">		int row = mS2.getRow();</span>
+<span class="nc" id="L159">		int col = mS2.getCol();</span>
+<span class="nc" id="L160">		int array1[] = new int[theSize];</span>
+<span class="nc" id="L161">		int Array1[] = new int[theSize];</span>
+<span class="nc" id="L162">		int array2[][] = new int[row][col];</span>
+<span class="nc" id="L163">		int Array2[][] = new int[row][col];</span>
+<span class="nc" id="L164">		boolean iValid = false;		</span>
+<span class="nc" id="L165">		boolean iMagic = false;</span>
+		
+<span class="nc" id="L167">		iValid = mS2.isValid();</span>
+<span class="nc" id="L168">		iMagic = mS2.isMagic();</span>
+<span class="nc" id="L169">		SUM_H = mS2.getSum();</span>
+<span class="nc" id="L170">		SUM_V = mS2.getSum2();</span>
+<span class="nc" id="L171">		array2 = PProc1.oneD2twoD();</span>
+<span class="nc" id="L172">		array1 = PProc1.Get_1D_array();</span>
+<span class="nc" id="L173">		Array1 = PProc1.reverseArray(array1);</span>
+<span class="nc" id="L174">		Array2 = PProc1.Get2D_Reverse();</span>
+		
+<span class="nc" id="L176">		boolean Sdiag1 = PProc1.summingDiag0();</span>
+<span class="nc" id="L177">		boolean Sdiag2 = PProc1.summingDiag1();</span>
+		
+<span class="nc" id="L179">		int expAns = 34;</span>
+		
+<span class="nc bnc" id="L181" title="All 2 branches missed.">		assertFalse(mS2.getSum2() == expAns);//Sum, column.</span>
+<span class="nc" id="L182">	}</span>
+	
+	@Test
+	public void testGetSUMLRP() {
+<span class="nc" id="L186">		ArrayList&lt;Integer&gt; nList = new ArrayList&lt;Integer&gt;(Arrays.asList(8, 1, 6, 3, 5, 7, 4, 9, 2));</span>
+<span class="nc" id="L187">		mSquareTest = new MagicSquare(nList);</span>
+<span class="nc" id="L188">		PProc1 = new PostProcess(mSquareTest);</span>
+		
+<span class="nc" id="L190">		int SUM_V = 0;</span>
+<span class="nc" id="L191">		int SUM_H = 0;</span>
+<span class="nc" id="L192">		int SUM_LR_DIAG = 0;</span>
+<span class="nc" id="L193">		int SUM_RL_DIAG = 0;</span>
+<span class="nc" id="L194">		int theSize = mSquareTest.getN();</span>
+<span class="nc" id="L195">		int row = mSquareTest.getRow();</span>
+<span class="nc" id="L196">		int col = mSquareTest.getCol();</span>
+<span class="nc" id="L197">		int array1[] = new int[theSize];</span>
+<span class="nc" id="L198">		int Array1[] = new int[theSize];</span>
+<span class="nc" id="L199">		int array2[][] = new int[row][col];</span>
+<span class="nc" id="L200">		int Array2[][] = new int[row][col];</span>
+<span class="nc" id="L201">		boolean iValid = false;		</span>
+<span class="nc" id="L202">		boolean iMagic = false;</span>
+		
+<span class="nc" id="L204">		iValid = mSquareTest.isValid();</span>
+<span class="nc" id="L205">		iMagic = mSquareTest.isMagic();</span>
+<span class="nc" id="L206">		SUM_H = mSquareTest.getSum();</span>
+<span class="nc" id="L207">		SUM_V = mSquareTest.getSum2();</span>
+<span class="nc" id="L208">		array2 = PProc1.oneD2twoD();</span>
+<span class="nc" id="L209">		array1 = PProc1.Get_1D_array();</span>
+<span class="nc" id="L210">		Array1 = PProc1.reverseArray(array1);</span>
+<span class="nc" id="L211">		Array2 = PProc1.Get2D_Reverse();</span>
+		
+<span class="nc" id="L213">		boolean Sdiag1 = PProc1.summingDiag0();</span>
+<span class="nc" id="L214">		boolean Sdiag2 = PProc1.summingDiag1();</span>
+<span class="nc" id="L215">		SUM_LR_DIAG = PProc1.getSUMLR();</span>
+<span class="nc" id="L216">		SUM_RL_DIAG = PProc1.getSUMRL();</span>
+		
+<span class="nc" id="L218">		int expAns = 15;</span>
+<span class="nc" id="L219">		assertEquals(expAns,SUM_LR_DIAG);//Sum, left-&gt;right, diagonal		</span>
+<span class="nc" id="L220">	}</span>
+
+	@Test
+	public void testGetSUMRLP() {
+<span class="nc" id="L224">		ArrayList&lt;Integer&gt; nL = new ArrayList&lt;Integer&gt;(Arrays.asList(8, 1, 6, 3, 5, 7, 4, 9, 2));</span>
+<span class="nc" id="L225">		mS1 = new MagicSquare(nL);</span>
+<span class="nc" id="L226">		PProc2 = new PostProcess(mS1);</span>
+		
+<span class="nc" id="L228">		int SUM_V = 0;</span>
+<span class="nc" id="L229">		int SUM_H = 0;</span>
+<span class="nc" id="L230">		int SUM_LR_DIAG = 0;</span>
+<span class="nc" id="L231">		int SUM_RL_DIAG = 0;</span>
+<span class="nc" id="L232">		int theSize = mS1.getN();</span>
+<span class="nc" id="L233">		int row = mS1.getRow();</span>
+<span class="nc" id="L234">		int col = mS1.getCol();</span>
+<span class="nc" id="L235">		int array1[] = new int[theSize];</span>
+<span class="nc" id="L236">		int Array1[] = new int[theSize];</span>
+<span class="nc" id="L237">		int array2[][] = new int[row][col];</span>
+<span class="nc" id="L238">		int Array2[][] = new int[row][col];</span>
+<span class="nc" id="L239">		boolean iValid = false;		</span>
+<span class="nc" id="L240">		boolean iMagic = false;</span>
+		
+<span class="nc" id="L242">		iValid = mS1.isValid();</span>
+<span class="nc" id="L243">		iMagic = mS1.isMagic();</span>
+<span class="nc" id="L244">		SUM_H = mS1.getSum();</span>
+<span class="nc" id="L245">		SUM_V = mS1.getSum2();</span>
+<span class="nc" id="L246">		array2 = PProc2.oneD2twoD();</span>
+<span class="nc" id="L247">		array1 = PProc2.Get_1D_array();</span>
+<span class="nc" id="L248">		Array1 = PProc2.reverseArray(array1);</span>
+<span class="nc" id="L249">		Array2 = PProc2.Get2D_Reverse();</span>
+		
+<span class="nc" id="L251">		boolean Sdiag1 = PProc2.summingDiag0();</span>
+<span class="nc" id="L252">		boolean Sdiag2 = PProc2.summingDiag1();</span>
+		
+<span class="nc" id="L254">		SUM_RL_DIAG = PProc2.getSUMRL();</span>
+		
+<span class="nc" id="L256">		int expAns = 15;</span>
+<span class="nc" id="L257">		assertEquals(expAns,SUM_RL_DIAG);//Sum, right-&gt;left, diagonal</span>
+<span class="nc" id="L258">	}</span>
+	
+	@Test
+	public void testGetSUMLRF() {
+<span class="nc" id="L262">		ArrayList&lt;Integer&gt; nList = new ArrayList&lt;Integer&gt;(Arrays.asList(8, 1, 6, 3, 5, 7, 4, 9, 2));</span>
+<span class="nc" id="L263">		mSquareTest = new MagicSquare(nList);</span>
+<span class="nc" id="L264">		PProc1 = new PostProcess(mSquareTest);</span>
+		
+<span class="nc" id="L266">		int SUM_V = 0;</span>
+<span class="nc" id="L267">		int SUM_H = 0;</span>
+<span class="nc" id="L268">		int SUM_LR_DIAG = 0;</span>
+<span class="nc" id="L269">		int SUM_RL_DIAG = 0;</span>
+<span class="nc" id="L270">		int theSize = mSquareTest.getN();</span>
+<span class="nc" id="L271">		int row = mSquareTest.getRow();</span>
+<span class="nc" id="L272">		int col = mSquareTest.getCol();</span>
+<span class="nc" id="L273">		int array1[] = new int[theSize];</span>
+<span class="nc" id="L274">		int Array1[] = new int[theSize];</span>
+<span class="nc" id="L275">		int array2[][] = new int[row][col];</span>
+<span class="nc" id="L276">		int Array2[][] = new int[row][col];</span>
+<span class="nc" id="L277">		boolean iValid = false;		</span>
+<span class="nc" id="L278">		boolean iMagic = false;</span>
+		
+<span class="nc" id="L280">		iValid = mSquareTest.isValid();</span>
+<span class="nc" id="L281">		iMagic = mSquareTest.isMagic();</span>
+<span class="nc" id="L282">		SUM_H = mSquareTest.getSum();</span>
+<span class="nc" id="L283">		SUM_V = mSquareTest.getSum2();</span>
+<span class="nc" id="L284">		array2 = PProc1.oneD2twoD();</span>
+<span class="nc" id="L285">		array1 = PProc1.Get_1D_array();</span>
+<span class="nc" id="L286">		Array1 = PProc1.reverseArray(array1);</span>
+<span class="nc" id="L287">		Array2 = PProc1.Get2D_Reverse();</span>
+		
+<span class="nc" id="L289">		boolean Sdiag1 = PProc1.summingDiag0();</span>
+<span class="nc" id="L290">		boolean Sdiag2 = PProc1.summingDiag1();</span>
+<span class="nc" id="L291">		SUM_LR_DIAG = PProc1.getSUMLR();		</span>
+		
+<span class="nc" id="L293">		int expAns = 22;</span>
+<span class="nc bnc" id="L294" title="All 2 branches missed.">		assertFalse(PProc1.getSUMLR() == expAns);//Sum, left-&gt;right, diagonal	</span>
+<span class="nc" id="L295">	}</span>
+
+	@Test
+	public void testGetSUMRLF() {
+<span class="nc" id="L299">		ArrayList&lt;Integer&gt; nL = new ArrayList&lt;Integer&gt;(Arrays.asList(8, 1, 6, 3, 5, 7, 4, 9, 2));</span>
+<span class="nc" id="L300">		mS1 = new MagicSquare(nL);</span>
+<span class="nc" id="L301">		PProc2 = new PostProcess(mS1);</span>
+		
+<span class="nc" id="L303">		int SUM_V = 0;</span>
+<span class="nc" id="L304">		int SUM_H = 0;</span>
+<span class="nc" id="L305">		int SUM_LR_DIAG = 0;</span>
+<span class="nc" id="L306">		int SUM_RL_DIAG = 0;</span>
+<span class="nc" id="L307">		int theSize = mS1.getN();</span>
+<span class="nc" id="L308">		int row = mS1.getRow();</span>
+<span class="nc" id="L309">		int col = mS1.getCol();</span>
+<span class="nc" id="L310">		int array1[] = new int[theSize];</span>
+<span class="nc" id="L311">		int Array1[] = new int[theSize];</span>
+<span class="nc" id="L312">		int array2[][] = new int[row][col];</span>
+<span class="nc" id="L313">		int Array2[][] = new int[row][col];</span>
+<span class="nc" id="L314">		boolean iValid = false;		</span>
+<span class="nc" id="L315">		boolean iMagic = false;</span>
+		
+<span class="nc" id="L317">		iValid = mS1.isValid();</span>
+<span class="nc" id="L318">		iMagic = mS1.isMagic();</span>
+<span class="nc" id="L319">		SUM_H = mS1.getSum();</span>
+<span class="nc" id="L320">		SUM_V = mS1.getSum2();</span>
+<span class="nc" id="L321">		array2 = PProc2.oneD2twoD();</span>
+<span class="nc" id="L322">		array1 = PProc2.Get_1D_array();</span>
+<span class="nc" id="L323">		Array1 = PProc2.reverseArray(array1);</span>
+<span class="nc" id="L324">		Array2 = PProc2.Get2D_Reverse();</span>
+		
+<span class="nc" id="L326">		boolean Sdiag1 = PProc2.summingDiag0();</span>
+<span class="nc" id="L327">		boolean Sdiag2 = PProc2.summingDiag1();</span>
+		
+<span class="nc" id="L329">		SUM_RL_DIAG = PProc2.getSUMRL();</span>
+		
+<span class="nc" id="L331">		int expAns = 22;</span>
+<span class="nc bnc" id="L332" title="All 2 branches missed.">		assertFalse(PProc2.getSUMRL() == expAns);//Sum, right-&gt;left, diagonal</span>
+<span class="nc" id="L333">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.6.201602180812</span>Main (Apr 23, 2016 4:02:49 PM)</div></body></html>

@@ -1,0 +1,4 @@
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Main,org.eclipse.launchbar.core.descriptorType.default\:MagicSquareTestC1C2,org.eclipse.launchbar.core.descriptorType.default\:PostProcessTestC1C2C3,org.eclipse.launchbar.core.descriptorType.default\:AllTests,org.eclipse.launchbar.core.descriptorType.default\:FactPattern
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Main/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Main/activeLaunchTarget=org.eclipse.remote.LocalServices\:Local

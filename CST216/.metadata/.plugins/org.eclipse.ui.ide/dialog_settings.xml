@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="CleanDialogSettings">
+		<item value="569" key="DIALOG_WIDTH"/>
+		<item value="false" key="BUILD_ALL"/>
+		<item value="true" key="TOGGLE_SELECTED"/>
+		<item value="475" key="DIALOG_HEIGHT"/>
+		<item value="427" key="DIALOG_X_ORIGIN"/>
+		<item value="94" key="DIALOG_Y_ORIGIN"/>
+		<item value="true" key="BUILD_NOW"/>
+	</section>
+	<section name="ExternalProjectImportWizard">
+		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="F:\CST216\hqpham_CST216_Assignment2.zip"/>
+			<item value="F:\CST216\W3\hqpham-Assignment3.zip"/>
+			<item value="F:\CST216\W2\hqpham-Assignment2.zip"/>
+		</list>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="325" key="DIALOG_X_ORIGIN"/>
+		<item value="197" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="BasicNewProjectResourceWizard">
+	</section>
+</section>

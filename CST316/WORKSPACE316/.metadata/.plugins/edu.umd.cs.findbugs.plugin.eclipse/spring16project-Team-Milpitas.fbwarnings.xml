@@ -1,0 +1,1555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1455585293052" analysisTimestamp="1455585265549" release="">
+  <Project projectName="spring16project-Team-Milpitas">
+    <Jar>C:\CST316\WORKSPACE316\spring16project-Team-Milpitas\classes</Jar>
+    <AuxClasspathEntry>C:\CST316\WORKSPACE316\spring16project-Team-Milpitas\classes</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\CST316\WORKSPACE316\spring16project-Team-Milpitas\lib\asm-debug-all-5.0.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\CST316\WORKSPACE316\spring16project-Team-Milpitas\lib\bcel-6.0-SNAPSHOT.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\CST316\WORKSPACE316\spring16project-Team-Milpitas\lib\checkstyle-6.15-all.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\CST316\WORKSPACE316\spring16project-Team-Milpitas\lib\commons-io-2.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\CST316\WORKSPACE316\spring16project-Team-Milpitas\lib\commons-lang-2.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\CST316\WORKSPACE316\spring16project-Team-Milpitas\lib\commons-lang3-3.3.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\CST316\WORKSPACE316\spring16project-Team-Milpitas\lib\dom4j-1.6.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\CST316\WORKSPACE316\spring16project-Team-Milpitas\lib\findbugs-ant.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\CST316\WORKSPACE316\spring16project-Team-Milpitas\lib\jaxen-1.1.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\CST316\WORKSPACE316\spring16project-Team-Milpitas\lib\jsr305.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\CST316\WORKSPACE316\spring16project-Team-Milpitas\lib\jFormatString.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\CST316\WORKSPACE316\spring16project-Team-Milpitas\lib\findbugs.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\CST316\WORKSPACE316\spring16project-Team-Milpitas\lib\jacocoagent.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\CST316\WORKSPACE316\spring16project-Team-Milpitas\lib\jacocoant.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\CST316\WORKSPACE316\spring16project-Team-Milpitas\lib\javax.mail.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\CST316\WORKSPACE316\spring16project-Team-Milpitas\lib\junit-4.10.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\CST316\WORKSPACE316\spring16project-Team-Milpitas\lib\nekohtml.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\CST316\WORKSPACE316\spring16project-Team-Milpitas\lib\nekohtmlXni.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\CST316\WORKSPACE316\spring16project-Team-Milpitas\lib\swag.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\CST316\WORKSPACE316\spring16project-Team-Milpitas\lib\swexpl.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\CST316\WORKSPACE316\spring16project-Team-Milpitas\lib\xercesImpl.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\CST316\WORKSPACE316\spring16project-Team-Milpitas\lib\xmlParserAPIs.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\CST316\WORKSPACE316\spring16project-Team-Milpitas\lib\xom-1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jdk1.8.0_72\jre\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>C:\CST316\WORKSPACE316\spring16project-Team-Milpitas\src\net\sf\memoranda</SrcDir>
+    <SrcDir>C:\CST316\WORKSPACE316\spring16project-Team-Milpitas\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="CurrentNote">
+      <SourceLine classname="CurrentNote" sourcefile="CurrentNote.java" sourcepath="CurrentNote.java"/>
+    </Class>
+    <Field classname="CurrentNote" name="currentNote" signature="LNote;" isStatic="true">
+      <SourceLine classname="CurrentNote" sourcefile="CurrentNote.java" sourcepath="CurrentNote.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="CurrentNote">
+      <SourceLine classname="CurrentNote" sourcefile="CurrentNote.java" sourcepath="CurrentNote.java"/>
+    </Class>
+    <Field classname="CurrentNote" name="noteListeners" signature="Ljava/util/Vector;" isStatic="true">
+      <SourceLine classname="CurrentNote" sourcefile="CurrentNote.java" sourcepath="CurrentNote.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="CurrentProject">
+      <SourceLine classname="CurrentProject" sourcefile="CurrentProject.java" sourcepath="CurrentProject.java"/>
+    </Class>
+    <Field classname="CurrentProject" name="projectListeners" signature="Ljava/util/Vector;" isStatic="true">
+      <SourceLine classname="CurrentProject" sourcefile="CurrentProject.java" sourcepath="CurrentProject.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="EQ_COMPARETO_USE_OBJECT_EQUALS" priority="2" rank="16" abbrev="Eq" category="BAD_PRACTICE" first="1">
+    <Class classname="EventImpl">
+      <SourceLine classname="EventImpl" sourcefile="EventImpl.java" sourcepath="EventImpl.java"/>
+    </Class>
+    <Method classname="EventImpl" name="compareTo" signature="(Ljava/lang/Object;)I" isStatic="false">
+      <SourceLine classname="EventImpl" start="147" end="147" startBytecode="0" endBytecode="51" sourcefile="EventImpl.java" sourcepath="EventImpl.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="EventsManager$Day">
+      <SourceLine classname="EventsManager$Day" sourcefile="EventsManager.java" sourcepath="EventsManager.java"/>
+    </Class>
+    <Field classname="EventsManager$Day" name="dEl" signature="Lnu/xom/Element;" isStatic="false">
+      <SourceLine classname="EventsManager$Day" sourcefile="EventsManager.java" sourcepath="EventsManager.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="EventsManager$Month">
+      <SourceLine classname="EventsManager$Month" sourcefile="EventsManager.java" sourcepath="EventsManager.java"/>
+    </Class>
+    <Field classname="EventsManager$Month" name="mElement" signature="Lnu/xom/Element;" isStatic="false">
+      <SourceLine classname="EventsManager$Month" sourcefile="EventsManager.java" sourcepath="EventsManager.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="EventsManager$Year">
+      <SourceLine classname="EventsManager$Year" sourcefile="EventsManager.java" sourcepath="EventsManager.java"/>
+    </Class>
+    <Field classname="EventsManager$Year" name="yearElement" signature="Lnu/xom/Element;" isStatic="false">
+      <SourceLine classname="EventsManager$Year" sourcefile="EventsManager.java" sourcepath="EventsManager.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="EventsScheduler">
+      <SourceLine classname="EventsScheduler" sourcefile="EventsScheduler.java" sourcepath="EventsScheduler.java"/>
+    </Class>
+    <Field classname="EventsScheduler" name="changeDateTimer" signature="Ljava/util/Timer;" isStatic="true">
+      <SourceLine classname="EventsScheduler" sourcefile="EventsScheduler.java" sourcepath="EventsScheduler.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="GoogleMail">
+      <SourceLine classname="GoogleMail" sourcefile="GoogleMail.java" sourcepath="GoogleMail.java"/>
+    </Class>
+    <Method classname="GoogleMail" name="Send" signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="GoogleMail" start="63" end="64" startBytecode="0" endBytecode="97" sourcefile="GoogleMail.java" sourcepath="GoogleMail.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="GoogleMail">
+      <SourceLine classname="GoogleMail" sourcefile="GoogleMail.java" sourcepath="GoogleMail.java"/>
+    </Class>
+    <Method classname="GoogleMail" name="Send" signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="GoogleMail" start="79" end="123" startBytecode="0" endBytecode="518" sourcefile="GoogleMail.java" sourcepath="GoogleMail.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="History">
+      <SourceLine classname="History" sourcefile="History.java" sourcepath="History.java"/>
+    </Class>
+    <Field classname="History" name="historyListeners" signature="Ljava/util/Vector;" isStatic="true">
+      <SourceLine classname="History" sourcefile="History.java" sourcepath="History.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="History">
+      <SourceLine classname="History" sourcefile="History.java" sourcepath="History.java"/>
+    </Class>
+    <Field classname="History" name="next" signature="Ljava/lang/Object;" isStatic="true">
+      <SourceLine classname="History" sourcefile="History.java" sourcepath="History.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="History">
+      <SourceLine classname="History" sourcefile="History.java" sourcepath="History.java"/>
+    </Class>
+    <Field classname="History" name="p" signature="I" isStatic="true">
+      <SourceLine classname="History" sourcefile="History.java" sourcepath="History.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="History">
+      <SourceLine classname="History" sourcefile="History.java" sourcepath="History.java"/>
+    </Class>
+    <Field classname="History" name="prev" signature="Ljava/lang/Object;" isStatic="true">
+      <SourceLine classname="History" sourcefile="History.java" sourcepath="History.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="History">
+      <SourceLine classname="History" sourcefile="History.java" sourcepath="History.java"/>
+    </Class>
+    <Field classname="History" name="historyBackAction" signature="LHistory$HistoryBackAction;" isStatic="true">
+      <SourceLine classname="History" sourcefile="History.java" sourcepath="History.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="History">
+      <SourceLine classname="History" sourcefile="History.java" sourcepath="History.java"/>
+    </Class>
+    <Field classname="History" name="historyForwardAction" signature="LHistory$HistoryForwardAction;" isStatic="true">
+      <SourceLine classname="History" sourcefile="History.java" sourcepath="History.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="EQ_SELF_USE_OBJECT" priority="2" rank="8" abbrev="Eq" category="CORRECTNESS" first="1">
+    <Class classname="HistoryItem">
+      <SourceLine classname="HistoryItem" sourcefile="HistoryItem.java" sourcepath="HistoryItem.java"/>
+    </Class>
+    <Method classname="HistoryItem" name="equals" signature="(LHistoryItem;)Z" isStatic="false">
+      <SourceLine classname="HistoryItem" start="43" end="43" startBytecode="0" endBytecode="51" sourcefile="HistoryItem.java" sourcepath="HistoryItem.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="2" rank="16" abbrev="HE" category="BAD_PRACTICE" first="1">
+    <Class classname="HistoryItem">
+      <SourceLine classname="HistoryItem" sourcefile="HistoryItem.java" sourcepath="HistoryItem.java"/>
+    </Class>
+    <Method classname="HistoryItem" name="equals" signature="(LHistoryItem;)Z" isStatic="false">
+      <SourceLine classname="HistoryItem" start="43" end="43" startBytecode="0" endBytecode="51" sourcefile="HistoryItem.java" sourcepath="HistoryItem.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="EQ_COMPARETO_USE_OBJECT_EQUALS" priority="2" rank="16" abbrev="Eq" category="BAD_PRACTICE" first="1">
+    <Class classname="NoteImpl">
+      <SourceLine classname="NoteImpl" sourcefile="NoteImpl.java" sourcepath="NoteImpl.java"/>
+    </Class>
+    <Method classname="NoteImpl" name="compareTo" signature="(Ljava/lang/Object;)I" isStatic="false">
+      <SourceLine classname="NoteImpl" start="112" end="112" startBytecode="0" endBytecode="51" sourcefile="NoteImpl.java" sourcepath="NoteImpl.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="NoteListImpl$Day">
+      <SourceLine classname="NoteListImpl$Day" start="9" end="390" sourcefile="NoteListImpl.java" sourcepath="NoteListImpl.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="NoteListImpl$Day">
+      <SourceLine classname="NoteListImpl$Day" sourcefile="NoteListImpl.java" sourcepath="NoteListImpl.java"/>
+    </Class>
+    <Field classname="NoteListImpl$Day" name="dEl" signature="Lnu/xom/Element;" isStatic="false">
+      <SourceLine classname="NoteListImpl$Day" sourcefile="NoteListImpl.java" sourcepath="NoteListImpl.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="NoteListImpl$Month">
+      <SourceLine classname="NoteListImpl$Month" start="9" end="313" sourcefile="NoteListImpl.java" sourcepath="NoteListImpl.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="NoteListImpl$Month">
+      <SourceLine classname="NoteListImpl$Month" sourcefile="NoteListImpl.java" sourcepath="NoteListImpl.java"/>
+    </Class>
+    <Field classname="NoteListImpl$Month" name="mElement" signature="Lnu/xom/Element;" isStatic="false">
+      <SourceLine classname="NoteListImpl$Month" sourcefile="NoteListImpl.java" sourcepath="NoteListImpl.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="NoteListImpl$NoteElement">
+      <SourceLine classname="NoteListImpl$NoteElement" start="9" end="407" sourcefile="NoteListImpl.java" sourcepath="NoteListImpl.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="NoteListImpl$NoteElement">
+      <SourceLine classname="NoteListImpl$NoteElement" sourcefile="NoteListImpl.java" sourcepath="NoteListImpl.java"/>
+    </Class>
+    <Field classname="NoteListImpl$NoteElement" name="nEl" signature="Lnu/xom/Element;" isStatic="false">
+      <SourceLine classname="NoteListImpl$NoteElement" sourcefile="NoteListImpl.java" sourcepath="NoteListImpl.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="NoteListImpl$Year">
+      <SourceLine classname="NoteListImpl$Year" start="9" end="258" sourcefile="NoteListImpl.java" sourcepath="NoteListImpl.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="NoteListImpl$Year">
+      <SourceLine classname="NoteListImpl$Year" sourcefile="NoteListImpl.java" sourcepath="NoteListImpl.java"/>
+    </Class>
+    <Field classname="NoteListImpl$Year" name="yearElement" signature="Lnu/xom/Element;" isStatic="false">
+      <SourceLine classname="NoteListImpl$Year" sourcefile="NoteListImpl.java" sourcepath="NoteListImpl.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="Start">
+      <SourceLine classname="Start" sourcefile="Start.java" sourcepath="Start.java"/>
+    </Class>
+    <Field classname="Start" name="DEFAULT_PORT" signature="I" isStatic="true">
+      <SourceLine classname="Start" sourcefile="Start.java" sourcepath="Start.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="Start">
+      <SourceLine classname="Start" sourcefile="Start.java" sourcepath="Start.java"/>
+    </Class>
+    <Field classname="Start" name="app" signature="LApp;" isStatic="true">
+      <SourceLine classname="Start" sourcefile="Start.java" sourcepath="Start.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="Start">
+      <SourceLine classname="Start" sourcefile="Start.java" sourcepath="Start.java"/>
+    </Class>
+    <Field classname="Start" name="checkIfAlreadyStartet" signature="Z" isStatic="true">
+      <SourceLine classname="Start" sourcefile="Start.java" sourcepath="Start.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="EQ_UNUSUAL" priority="2" rank="17" abbrev="Eq" category="STYLE" first="1">
+    <Class classname="TaskImpl">
+      <SourceLine classname="TaskImpl" sourcefile="TaskImpl.java" sourcepath="TaskImpl.java"/>
+    </Class>
+    <Method classname="TaskImpl" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="TaskImpl" start="374" end="374" startBytecode="0" endBytecode="51" sourcefile="TaskImpl.java" sourcepath="TaskImpl.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" rank="14" abbrev="HE" category="BAD_PRACTICE" first="1">
+    <Class classname="TaskImpl">
+      <SourceLine classname="TaskImpl" sourcefile="TaskImpl.java" sourcepath="TaskImpl.java"/>
+    </Class>
+    <Method classname="TaskImpl" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="TaskImpl" start="374" end="374" startBytecode="0" endBytecode="51" sourcefile="TaskImpl.java" sourcepath="TaskImpl.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="TaskListImpl">
+      <SourceLine classname="TaskListImpl" sourcefile="TaskListImpl.java" sourcepath="TaskListImpl.java"/>
+    </Class>
+    <Field classname="TaskListImpl" name="elements" signature="Ljava/util/Hashtable;" isStatic="false">
+      <SourceLine classname="TaskListImpl" sourcefile="TaskListImpl.java" sourcepath="TaskListImpl.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="EQ_UNUSUAL" priority="2" rank="17" abbrev="Eq" category="STYLE" first="1">
+    <Class classname="date.CalendarDate">
+      <SourceLine classname="date.CalendarDate" sourcefile="CalendarDate.java" sourcepath="date/CalendarDate.java"/>
+    </Class>
+    <Method classname="date.CalendarDate" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="date.CalendarDate" start="123" end="123" startBytecode="0" endBytecode="51" sourcefile="CalendarDate.java" sourcepath="date/CalendarDate.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="1" rank="14" abbrev="HE" category="BAD_PRACTICE" first="1">
+    <Class classname="date.CalendarDate">
+      <SourceLine classname="date.CalendarDate" sourcefile="CalendarDate.java" sourcepath="date/CalendarDate.java"/>
+    </Class>
+    <Method classname="date.CalendarDate" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="date.CalendarDate" start="123" end="123" startBytecode="0" endBytecode="51" sourcefile="CalendarDate.java" sourcepath="date/CalendarDate.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="date.CurrentDate">
+      <SourceLine classname="date.CurrentDate" sourcefile="CurrentDate.java" sourcepath="date/CurrentDate.java"/>
+    </Class>
+    <Field classname="date.CurrentDate" name="dateListeners" signature="Ljava/util/Vector;" isStatic="true">
+      <SourceLine classname="date.CurrentDate" sourcefile="CurrentDate.java" sourcepath="date/CurrentDate.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="tests.CalendarDateTest">
+      <SourceLine classname="tests.CalendarDateTest" sourcefile="CalendarDateTest.java" sourcepath="tests/CalendarDateTest.java"/>
+    </Class>
+    <Field classname="tests.CalendarDateTest" name="cd1" signature="LCalendarDate;" isStatic="false">
+      <SourceLine classname="tests.CalendarDateTest" sourcefile="CalendarDateTest.java" sourcepath="tests/CalendarDateTest.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="tests.CalendarDateTest">
+      <SourceLine classname="tests.CalendarDateTest" sourcefile="CalendarDateTest.java" sourcepath="tests/CalendarDateTest.java"/>
+    </Class>
+    <Field classname="tests.CalendarDateTest" name="cd2" signature="LCalendarDate;" isStatic="false">
+      <SourceLine classname="tests.CalendarDateTest" sourcefile="CalendarDateTest.java" sourcepath="tests/CalendarDateTest.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="tests.CalendarDateTest">
+      <SourceLine classname="tests.CalendarDateTest" sourcefile="CalendarDateTest.java" sourcepath="tests/CalendarDateTest.java"/>
+    </Class>
+    <Field classname="tests.CalendarDateTest" name="cd3" signature="LCalendarDate;" isStatic="false">
+      <SourceLine classname="tests.CalendarDateTest" sourcefile="CalendarDateTest.java" sourcepath="tests/CalendarDateTest.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.App">
+      <SourceLine classname="ui.App" sourcefile="App.java" sourcepath="ui/App.java"/>
+    </Class>
+    <Field classname="ui.App" name="frame" signature="Lui/AppFrame;" isStatic="true">
+      <SourceLine classname="ui.App" sourcefile="App.java" sourcepath="ui/App.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.App">
+      <SourceLine classname="ui.App" sourcefile="App.java" sourcepath="ui/App.java"/>
+    </Class>
+    <Field classname="ui.App" name="splash" signature="Ljavax/swing/JFrame;" isStatic="false">
+      <SourceLine classname="ui.App" sourcefile="App.java" sourcepath="ui/App.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="ui.EventsTable$EventsTableModel">
+      <SourceLine classname="ui.EventsTable$EventsTableModel" start="9" end="135" sourcefile="EventsTable.java" sourcepath="ui/EventsTable.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.ExportSticker">
+      <SourceLine classname="ui.ExportSticker" sourcefile="ExportSticker.java" sourcepath="ui/ExportSticker.java"/>
+    </Class>
+    <Field classname="ui.ExportSticker" name="name" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="ui.ExportSticker" sourcefile="ExportSticker.java" sourcepath="ui/ExportSticker.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.ImportSticker">
+      <SourceLine classname="ui.ImportSticker" sourcefile="ImportSticker.java" sourcepath="ui/ImportSticker.java"/>
+    </Class>
+    <Field classname="ui.ImportSticker" name="name" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="ui.ImportSticker" sourcefile="ImportSticker.java" sourcepath="ui/ImportSticker.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="ui.JNCalendar$JNCalendarModel">
+      <SourceLine classname="ui.JNCalendar$JNCalendarModel" start="8" end="216" sourcefile="JNCalendar.java" sourcepath="ui/JNCalendar.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="ui.ProjectsPanel">
+      <SourceLine classname="ui.ProjectsPanel" sourcefile="ProjectsPanel.java" sourcepath="ui/ProjectsPanel.java"/>
+    </Class>
+    <Method classname="ui.ProjectsPanel" name="AddExpandListener" signature="(Ljava/awt/event/ActionListener;)V" isStatic="false">
+      <SourceLine classname="ui.ProjectsPanel" start="327" end="327" startBytecode="0" endBytecode="51" sourcefile="ProjectsPanel.java" sourcepath="ui/ProjectsPanel.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="ui.ProjectsTablePanel$PrjTableModel">
+      <SourceLine classname="ui.ProjectsTablePanel$PrjTableModel" start="1" end="183" sourcefile="ProjectsTablePanel.java" sourcepath="ui/ProjectsTablePanel.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="ui.ResourcesTable$ResourcesTableModel">
+      <SourceLine classname="ui.ResourcesTable$ResourcesTableModel" start="1" end="171" sourcefile="ResourcesTable.java" sourcepath="ui/ResourcesTable.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="ui.TaskTable$ExpansionHandler">
+      <SourceLine classname="ui.TaskTable$ExpansionHandler" start="21" end="549" sourcefile="TaskTable.java" sourcepath="ui/TaskTable.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.TaskTable$ExpansionHandler">
+      <SourceLine classname="ui.TaskTable$ExpansionHandler" sourcefile="TaskTable.java" sourcepath="ui/TaskTable.java"/>
+    </Class>
+    <Field classname="ui.TaskTable$ExpansionHandler" name="expanded" signature="Ljava/util/Set;" isStatic="false">
+      <SourceLine classname="ui.TaskTable$ExpansionHandler" sourcefile="TaskTable.java" sourcepath="ui/TaskTable.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="ui.TaskTable$ListToTreeSelectionModelWrapper">
+      <SourceLine classname="ui.TaskTable$ListToTreeSelectionModelWrapper" start="21" end="464" sourcefile="TaskTable.java" sourcepath="ui/TaskTable.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="ui.TaskTable$TreeTableCellRenderer">
+      <SourceLine classname="ui.TaskTable$TreeTableCellRenderer" start="21" end="338" sourcefile="TaskTable.java" sourcepath="ui/TaskTable.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.TaskTableModel">
+      <SourceLine classname="ui.TaskTableModel" sourcefile="TaskTableModel.java" sourcepath="ui/TaskTableModel.java"/>
+    </Class>
+    <Field classname="ui.TaskTableModel" name="activeOnly" signature="Z" isStatic="false">
+      <SourceLine classname="ui.TaskTableModel" sourcefile="TaskTableModel.java" sourcepath="ui/TaskTableModel.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.TaskTableModel">
+      <SourceLine classname="ui.TaskTableModel" sourcefile="TaskTableModel.java" sourcepath="ui/TaskTableModel.java"/>
+    </Class>
+    <Field classname="ui.TaskTableModel" name="columnNames" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="ui.TaskTableModel" sourcefile="TaskTableModel.java" sourcepath="ui/TaskTableModel.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="ui.TaskTableModel">
+      <SourceLine classname="ui.TaskTableModel" sourcefile="TaskTableModel.java" sourcepath="ui/TaskTableModel.java"/>
+    </Class>
+    <Field classname="ui.TaskTableModel" name="listenerList" signature="Ljavax/swing/event/EventListenerList;" isStatic="false">
+      <SourceLine classname="ui.TaskTableModel" sourcefile="TaskTableModel.java" sourcepath="ui/TaskTableModel.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.TaskTableSorter">
+      <SourceLine classname="ui.TaskTableSorter" sourcefile="TaskTableSorter.java" sourcepath="ui/TaskTableSorter.java"/>
+    </Class>
+    <Field classname="ui.TaskTableSorter" name="comparator" signature="Ljava/util/Comparator;" isStatic="false">
+      <SourceLine classname="ui.TaskTableSorter" sourcefile="TaskTableSorter.java" sourcepath="ui/TaskTableSorter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.TaskTableSorter">
+      <SourceLine classname="ui.TaskTableSorter" sourcefile="TaskTableSorter.java" sourcepath="ui/TaskTableSorter.java"/>
+    </Class>
+    <Field classname="ui.TaskTableSorter" name="opposite" signature="Z" isStatic="false">
+      <SourceLine classname="ui.TaskTableSorter" sourcefile="TaskTableSorter.java" sourcepath="ui/TaskTableSorter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.TaskTableSorter">
+      <SourceLine classname="ui.TaskTableSorter" sourcefile="TaskTableSorter.java" sourcepath="ui/TaskTableSorter.java"/>
+    </Class>
+    <Field classname="ui.TaskTableSorter" name="sorting_column" signature="I" isStatic="false">
+      <SourceLine classname="ui.TaskTableSorter" sourcefile="TaskTableSorter.java" sourcepath="ui/TaskTableSorter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter" name="blockElementStack" signature="Ljava/util/Stack;" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter" name="completeDoc" signature="Z" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter" name="convAttr" signature="Ljavax/swing/text/MutableAttributeSet;" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter" name="encoding" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter" name="inContent" signature="Z" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter" name="inPre" signature="Z" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter" name="inTextArea" signature="Z" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter" name="indentNext" signature="Z" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter" name="newlineOutputed" signature="Z" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter" name="oConvAttr" signature="Ljavax/swing/text/MutableAttributeSet;" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter" name="preEndOffset" signature="I" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter" name="replaceEntities" signature="Z" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter" name="segment" signature="Ljavax/swing/text/Segment;" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter" name="tagValues" signature="Ljava/util/Vector;" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter" name="tags" signature="Ljava/util/Vector;" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter" name="tagsToRemove" signature="Ljava/util/Vector;" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter" name="tempChars" signature="[C" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter" name="writeCSS" signature="Z" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter" name="wroteHead" signature="Z" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter$CircleRegionContainment">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$CircleRegionContainment" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter$CircleRegionContainment" name="lastHeight" signature="I" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$CircleRegionContainment" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter$CircleRegionContainment">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$CircleRegionContainment" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter$CircleRegionContainment" name="lastWidth" signature="I" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$CircleRegionContainment" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter$CircleRegionContainment">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$CircleRegionContainment" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter$CircleRegionContainment" name="percentValues" signature="[F" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$CircleRegionContainment" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter$CircleRegionContainment">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$CircleRegionContainment" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter$CircleRegionContainment" name="radiusSquared" signature="I" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$CircleRegionContainment" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter$CircleRegionContainment">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$CircleRegionContainment" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter$CircleRegionContainment" name="x" signature="I" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$CircleRegionContainment" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter$CircleRegionContainment">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$CircleRegionContainment" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter$CircleRegionContainment" name="y" signature="I" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$CircleRegionContainment" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter$DefaultRegionContainment">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$DefaultRegionContainment" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter$DefaultRegionContainment" name="si" signature="Lui/htmleditor/AltHTMLWriter$DefaultRegionContainment;" isStatic="true">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$DefaultRegionContainment" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter$Map">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$Map" start="10" end="1942" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter$Map">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$Map" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter$Map" name="areaAttributes" signature="Ljava/util/Vector;" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$Map" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter$Map">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$Map" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter$Map" name="areas" signature="Ljava/util/Vector;" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$Map" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter$Map">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$Map" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter$Map" name="name" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$Map" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD_INNER_CLASS" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter$OptionComboBoxModel">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$OptionComboBoxModel" start="10" end="1831" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter$OptionComboBoxModel">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$OptionComboBoxModel" start="10" end="1831" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="MF_CLASS_MASKS_FIELD" priority="2" rank="8" abbrev="MF" category="CORRECTNESS" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter$OptionListModel">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$OptionListModel" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter$OptionListModel" name="listenerList" signature="Ljavax/swing/event/EventListenerList;" isStatic="false" role="FIELD_MASKING">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$OptionListModel" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+    <Field classname="javax.swing.AbstractListModel" name="listenerList" signature="Ljavax/swing/event/EventListenerList;" isStatic="false" role="FIELD_MASKED">
+      <SourceLine classname="javax.swing.AbstractListModel" sourcefile="AbstractListModel.java" sourcepath="javax/swing/AbstractListModel.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD_INNER_CLASS" priority="2" rank="16" abbrev="Se" category="BAD_PRACTICE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter$OptionListModel">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$OptionListModel" start="10" end="1810" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter$OptionListModel">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$OptionListModel" start="10" end="1810" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter$RectangleRegionContainment">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$RectangleRegionContainment" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter$RectangleRegionContainment" name="lastHeight" signature="I" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$RectangleRegionContainment" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter$RectangleRegionContainment">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$RectangleRegionContainment" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter$RectangleRegionContainment" name="lastWidth" signature="I" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$RectangleRegionContainment" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter$RectangleRegionContainment">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$RectangleRegionContainment" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter$RectangleRegionContainment" name="percents" signature="[F" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$RectangleRegionContainment" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter$RectangleRegionContainment">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$RectangleRegionContainment" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter$RectangleRegionContainment" name="x0" signature="I" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$RectangleRegionContainment" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter$RectangleRegionContainment">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$RectangleRegionContainment" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter$RectangleRegionContainment" name="x1" signature="I" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$RectangleRegionContainment" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter$RectangleRegionContainment">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$RectangleRegionContainment" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter$RectangleRegionContainment" name="y0" signature="I" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$RectangleRegionContainment" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.AltHTMLWriter$RectangleRegionContainment">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$RectangleRegionContainment" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.AltHTMLWriter$RectangleRegionContainment" name="y1" signature="I" isStatic="false">
+      <SourceLine classname="ui.htmleditor.AltHTMLWriter$RectangleRegionContainment" sourcefile="AltHTMLWriter.java" sourcepath="ui/htmleditor/AltHTMLWriter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.Context">
+      <SourceLine classname="ui.htmleditor.Context" sourcefile="Context.java" sourcepath="ui/htmleditor/Context.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.Context" name="hash" signature="Ljava/util/Hashtable;" isStatic="true">
+      <SourceLine classname="ui.htmleditor.Context" sourcefile="Context.java" sourcepath="ui/htmleditor/Context.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.Finder">
+      <SourceLine classname="ui.htmleditor.Finder" sourcefile="Finder.java" sourcepath="ui/htmleditor/Finder.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.Finder" name="dispText" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="ui.htmleditor.Finder" sourcefile="Finder.java" sourcepath="ui/htmleditor/Finder.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.Finder">
+      <SourceLine classname="ui.htmleditor.Finder" sourcefile="Finder.java" sourcepath="ui/htmleditor/Finder.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.Finder" name="editor" signature="Lui/htmleditor/HTMLEditor;" isStatic="false">
+      <SourceLine classname="ui.htmleditor.Finder" sourcefile="Finder.java" sourcepath="ui/htmleditor/Finder.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.Finder">
+      <SourceLine classname="ui.htmleditor.Finder" sourcefile="Finder.java" sourcepath="ui/htmleditor/Finder.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.Finder" name="pattern" signature="Ljava/util/regex/Pattern;" isStatic="false">
+      <SourceLine classname="ui.htmleditor.Finder" sourcefile="Finder.java" sourcepath="ui/htmleditor/Finder.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.HTMLEditor">
+      <SourceLine classname="ui.htmleditor.HTMLEditor" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.HTMLEditor" name="I_CITE" signature="I" isStatic="false">
+      <SourceLine classname="ui.htmleditor.HTMLEditor" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.HTMLEditor">
+      <SourceLine classname="ui.htmleditor.HTMLEditor" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.HTMLEditor" name="I_CODE" signature="I" isStatic="false">
+      <SourceLine classname="ui.htmleditor.HTMLEditor" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.HTMLEditor">
+      <SourceLine classname="ui.htmleditor.HTMLEditor" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.HTMLEditor" name="I_CUSTOM" signature="I" isStatic="false">
+      <SourceLine classname="ui.htmleditor.HTMLEditor" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.HTMLEditor">
+      <SourceLine classname="ui.htmleditor.HTMLEditor" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.HTMLEditor" name="I_EM" signature="I" isStatic="false">
+      <SourceLine classname="ui.htmleditor.HTMLEditor" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.HTMLEditor">
+      <SourceLine classname="ui.htmleditor.HTMLEditor" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.HTMLEditor" name="I_NORMAL" signature="I" isStatic="false">
+      <SourceLine classname="ui.htmleditor.HTMLEditor" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.HTMLEditor">
+      <SourceLine classname="ui.htmleditor.HTMLEditor" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.HTMLEditor" name="I_STRONG" signature="I" isStatic="false">
+      <SourceLine classname="ui.htmleditor.HTMLEditor" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.HTMLEditor">
+      <SourceLine classname="ui.htmleditor.HTMLEditor" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.HTMLEditor" name="I_SUBSCRIPT" signature="I" isStatic="false">
+      <SourceLine classname="ui.htmleditor.HTMLEditor" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.HTMLEditor">
+      <SourceLine classname="ui.htmleditor.HTMLEditor" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.HTMLEditor" name="I_SUPERSCRIPT" signature="I" isStatic="false">
+      <SourceLine classname="ui.htmleditor.HTMLEditor" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.HTMLEditor">
+      <SourceLine classname="ui.htmleditor.HTMLEditor" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.HTMLEditor" name="T_BLOCKQ" signature="I" isStatic="false">
+      <SourceLine classname="ui.htmleditor.HTMLEditor" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.HTMLEditor">
+      <SourceLine classname="ui.htmleditor.HTMLEditor" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.HTMLEditor" name="T_H1" signature="I" isStatic="false">
+      <SourceLine classname="ui.htmleditor.HTMLEditor" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.HTMLEditor">
+      <SourceLine classname="ui.htmleditor.HTMLEditor" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.HTMLEditor" name="T_H2" signature="I" isStatic="false">
+      <SourceLine classname="ui.htmleditor.HTMLEditor" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.HTMLEditor">
+      <SourceLine classname="ui.htmleditor.HTMLEditor" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.HTMLEditor" name="T_H3" signature="I" isStatic="false">
+      <SourceLine classname="ui.htmleditor.HTMLEditor" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.HTMLEditor">
+      <SourceLine classname="ui.htmleditor.HTMLEditor" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.HTMLEditor" name="T_H4" signature="I" isStatic="false">
+      <SourceLine classname="ui.htmleditor.HTMLEditor" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.HTMLEditor">
+      <SourceLine classname="ui.htmleditor.HTMLEditor" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.HTMLEditor" name="T_H5" signature="I" isStatic="false">
+      <SourceLine classname="ui.htmleditor.HTMLEditor" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.HTMLEditor">
+      <SourceLine classname="ui.htmleditor.HTMLEditor" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.HTMLEditor" name="T_H6" signature="I" isStatic="false">
+      <SourceLine classname="ui.htmleditor.HTMLEditor" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.HTMLEditor">
+      <SourceLine classname="ui.htmleditor.HTMLEditor" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.HTMLEditor" name="T_P" signature="I" isStatic="false">
+      <SourceLine classname="ui.htmleditor.HTMLEditor" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.HTMLEditor">
+      <SourceLine classname="ui.htmleditor.HTMLEditor" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.HTMLEditor" name="T_PRE" signature="I" isStatic="false">
+      <SourceLine classname="ui.htmleditor.HTMLEditor" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.HTMLEditor$BlockAction">
+      <SourceLine classname="ui.htmleditor.HTMLEditor$BlockAction" start="1" end="1109" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.HTMLEditor$InlineAction">
+      <SourceLine classname="ui.htmleditor.HTMLEditor$InlineAction" start="1" end="1122" sourcefile="HTMLEditor.java" sourcepath="ui/htmleditor/HTMLEditor.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="ui.htmleditor.Util">
+      <SourceLine classname="ui.htmleditor.Util" sourcefile="Util.java" sourcepath="ui/htmleditor/Util.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.Util" name="HTMLColors" signature="Ljava/util/Hashtable;" isStatic="true">
+      <SourceLine classname="ui.htmleditor.Util" sourcefile="Util.java" sourcepath="ui/htmleditor/Util.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="ui.htmleditor.util.Local">
+      <SourceLine classname="ui.htmleditor.util.Local" sourcefile="Local.java" sourcepath="ui/htmleditor/util/Local.java"/>
+    </Class>
+    <Field classname="ui.htmleditor.util.Local" name="messages" signature="Ljava/util/Hashtable;" isStatic="true">
+      <SourceLine classname="ui.htmleditor.util.Local" sourcefile="Local.java" sourcepath="ui/htmleditor/util/Local.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="ui.treetable.AbstractCellEditor">
+      <SourceLine classname="ui.treetable.AbstractCellEditor" sourcefile="AbstractCellEditor.java" sourcepath="ui/treetable/AbstractCellEditor.java"/>
+    </Class>
+    <Field classname="ui.treetable.AbstractCellEditor" name="listenerList" signature="Ljavax/swing/event/EventListenerList;" isStatic="false">
+      <SourceLine classname="ui.treetable.AbstractCellEditor" sourcefile="AbstractCellEditor.java" sourcepath="ui/treetable/AbstractCellEditor.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="ui.treetable.AbstractTreeTableModel">
+      <SourceLine classname="ui.treetable.AbstractTreeTableModel" sourcefile="AbstractTreeTableModel.java" sourcepath="ui/treetable/AbstractTreeTableModel.java"/>
+    </Class>
+    <Field classname="ui.treetable.AbstractTreeTableModel" name="listenerList" signature="Ljavax/swing/event/EventListenerList;" isStatic="false">
+      <SourceLine classname="ui.treetable.AbstractTreeTableModel" sourcefile="AbstractTreeTableModel.java" sourcepath="ui/treetable/AbstractTreeTableModel.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="ui.treetable.AbstractTreeTableModel">
+      <SourceLine classname="ui.treetable.AbstractTreeTableModel" sourcefile="AbstractTreeTableModel.java" sourcepath="ui/treetable/AbstractTreeTableModel.java"/>
+    </Class>
+    <Field classname="ui.treetable.AbstractTreeTableModel" name="root" signature="Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="ui.treetable.AbstractTreeTableModel" sourcefile="AbstractTreeTableModel.java" sourcepath="ui/treetable/AbstractTreeTableModel.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="ui.treetable.JTreeTable$ListToTreeSelectionModelWrapper">
+      <SourceLine classname="ui.treetable.JTreeTable$ListToTreeSelectionModelWrapper" start="1" end="325" sourcefile="JTreeTable.java" sourcepath="ui/treetable/JTreeTable.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="ui.treetable.JTreeTable$TreeTableCellRenderer">
+      <SourceLine classname="ui.treetable.JTreeTable$TreeTableCellRenderer" start="1" end="212" sourcefile="JTreeTable.java" sourcepath="ui/treetable/JTreeTable.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="ui.treetable.MergeSort">
+      <SourceLine classname="ui.treetable.MergeSort" sourcefile="MergeSort.java" sourcepath="ui/treetable/MergeSort.java"/>
+    </Class>
+    <Field classname="ui.treetable.MergeSort" name="swapSpace" signature="[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="ui.treetable.MergeSort" sourcefile="MergeSort.java" sourcepath="ui/treetable/MergeSort.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="ui.treetable.MergeSort">
+      <SourceLine classname="ui.treetable.MergeSort" sourcefile="MergeSort.java" sourcepath="ui/treetable/MergeSort.java"/>
+    </Class>
+    <Field classname="ui.treetable.MergeSort" name="toSort" signature="[Ljava/lang/Object;" isStatic="false">
+      <SourceLine classname="ui.treetable.MergeSort" sourcefile="MergeSort.java" sourcepath="ui/treetable/MergeSort.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="util.AgendaGenerator">
+      <SourceLine classname="util.AgendaGenerator" sourcefile="AgendaGenerator.java" sourcepath="util/AgendaGenerator.java"/>
+    </Class>
+    <Field classname="util.AgendaGenerator" name="FOOTER" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="util.AgendaGenerator" sourcefile="AgendaGenerator.java" sourcepath="util/AgendaGenerator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="util.AgendaGenerator">
+      <SourceLine classname="util.AgendaGenerator" sourcefile="AgendaGenerator.java" sourcepath="util/AgendaGenerator.java"/>
+    </Class>
+    <Field classname="util.AgendaGenerator" name="HEADER" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="util.AgendaGenerator" sourcefile="AgendaGenerator.java" sourcepath="util/AgendaGenerator.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="util.AppList">
+      <SourceLine classname="util.AppList" sourcefile="AppList.java" sourcepath="util/AppList.java"/>
+    </Class>
+    <Field classname="util.AppList" name="OS_LINUX" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="util.AppList" sourcefile="AppList.java" sourcepath="util/AppList.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="util.AppList">
+      <SourceLine classname="util.AppList" sourcefile="AppList.java" sourcepath="util/AppList.java"/>
+    </Class>
+    <Field classname="util.AppList" name="OS_SOLARIS" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="util.AppList" sourcefile="AppList.java" sourcepath="util/AppList.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="util.AppList">
+      <SourceLine classname="util.AppList" sourcefile="AppList.java" sourcepath="util/AppList.java"/>
+    </Class>
+    <Field classname="util.AppList" name="OS_WINDOWS" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="util.AppList" sourcefile="AppList.java" sourcepath="util/AppList.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="util.Configuration">
+      <SourceLine classname="util.Configuration" sourcefile="Configuration.java" sourcepath="util/Configuration.java"/>
+    </Class>
+    <Field classname="util.Configuration" name="config" signature="Lutil/LoadableProperties;" isStatic="true">
+      <SourceLine classname="util.Configuration" sourcefile="Configuration.java" sourcepath="util/Configuration.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="util.Configuration">
+      <SourceLine classname="util.Configuration" sourcefile="Configuration.java" sourcepath="util/Configuration.java"/>
+    </Class>
+    <Field classname="util.Configuration" name="configPath" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="util.Configuration" sourcefile="Configuration.java" sourcepath="util/Configuration.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="util.Context">
+      <SourceLine classname="util.Context" sourcefile="Context.java" sourcepath="util/Context.java"/>
+    </Class>
+    <Field classname="util.Context" name="context" signature="Lutil/LoadableProperties;" isStatic="true">
+      <SourceLine classname="util.Context" sourcefile="Context.java" sourcepath="util/Context.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="util.CurrentStorage">
+      <SourceLine classname="util.CurrentStorage" sourcefile="CurrentStorage.java" sourcepath="util/CurrentStorage.java"/>
+    </Class>
+    <Field classname="util.CurrentStorage" name="actionListeners" signature="Ljava/util/Vector;" isStatic="true">
+      <SourceLine classname="util.CurrentStorage" sourcefile="CurrentStorage.java" sourcepath="util/CurrentStorage.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="util.FileStorage">
+      <SourceLine classname="util.FileStorage" sourcefile="FileStorage.java" sourcepath="util/FileStorage.java"/>
+    </Class>
+    <Field classname="util.FileStorage" name="editorKit" signature="Ljavax/swing/text/html/HTMLEditorKit;" isStatic="false">
+      <SourceLine classname="util.FileStorage" sourcefile="FileStorage.java" sourcepath="util/FileStorage.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="util.FileStorage">
+      <SourceLine classname="util.FileStorage" sourcefile="FileStorage.java" sourcepath="util/FileStorage.java"/>
+    </Class>
+    <Field classname="util.FileStorage" name="JN_DOCPATH" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="util.FileStorage" sourcefile="FileStorage.java" sourcepath="util/FileStorage.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="util.HTMLFileExport">
+      <SourceLine classname="util.HTMLFileExport" sourcefile="HTMLFileExport.java" sourcepath="util/HTMLFileExport.java"/>
+    </Class>
+    <Field classname="util.HTMLFileExport" name="charset" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="util.HTMLFileExport" sourcefile="HTMLFileExport.java" sourcepath="util/HTMLFileExport.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="util.HTMLFileExport">
+      <SourceLine classname="util.HTMLFileExport" sourcefile="HTMLFileExport.java" sourcepath="util/HTMLFileExport.java"/>
+    </Class>
+    <Field classname="util.HTMLFileExport" name="doc" signature="Ljavax/swing/text/html/HTMLDocument;" isStatic="false">
+      <SourceLine classname="util.HTMLFileExport" sourcefile="HTMLFileExport.java" sourcepath="util/HTMLFileExport.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="util.HTMLFileExport">
+      <SourceLine classname="util.HTMLFileExport" sourcefile="HTMLFileExport.java" sourcepath="util/HTMLFileExport.java"/>
+    </Class>
+    <Field classname="util.HTMLFileExport" name="f" signature="Ljava/io/File;" isStatic="false">
+      <SourceLine classname="util.HTMLFileExport" sourcefile="HTMLFileExport.java" sourcepath="util/HTMLFileExport.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="util.HTMLFileExport">
+      <SourceLine classname="util.HTMLFileExport" sourcefile="HTMLFileExport.java" sourcepath="util/HTMLFileExport.java"/>
+    </Class>
+    <Field classname="util.HTMLFileExport" name="note" signature="LNote;" isStatic="false">
+      <SourceLine classname="util.HTMLFileExport" sourcefile="HTMLFileExport.java" sourcepath="util/HTMLFileExport.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="util.HTMLFileExport">
+      <SourceLine classname="util.HTMLFileExport" sourcefile="HTMLFileExport.java" sourcepath="util/HTMLFileExport.java"/>
+    </Class>
+    <Field classname="util.HTMLFileExport" name="num" signature="Z" isStatic="false">
+      <SourceLine classname="util.HTMLFileExport" sourcefile="HTMLFileExport.java" sourcepath="util/HTMLFileExport.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="util.HTMLFileExport">
+      <SourceLine classname="util.HTMLFileExport" sourcefile="HTMLFileExport.java" sourcepath="util/HTMLFileExport.java"/>
+    </Class>
+    <Field classname="util.HTMLFileExport" name="templFile" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="util.HTMLFileExport" sourcefile="HTMLFileExport.java" sourcepath="util/HTMLFileExport.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="util.HTMLFileExport">
+      <SourceLine classname="util.HTMLFileExport" sourcefile="HTMLFileExport.java" sourcepath="util/HTMLFileExport.java"/>
+    </Class>
+    <Field classname="util.HTMLFileExport" name="xhtml" signature="Z" isStatic="false">
+      <SourceLine classname="util.HTMLFileExport" sourcefile="HTMLFileExport.java" sourcepath="util/HTMLFileExport.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="util.Local">
+      <SourceLine classname="util.Local" sourcefile="Local.java" sourcepath="util/Local.java"/>
+    </Class>
+    <Field classname="util.Local" name="currentLocale" signature="Ljava/util/Locale;" isStatic="true">
+      <SourceLine classname="util.Local" sourcefile="Local.java" sourcepath="util/Local.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="util.Local">
+      <SourceLine classname="util.Local" sourcefile="Local.java" sourcepath="util/Local.java"/>
+    </Class>
+    <Field classname="util.Local" name="disabled" signature="Z" isStatic="true">
+      <SourceLine classname="util.Local" sourcefile="Local.java" sourcepath="util/Local.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="util.Local">
+      <SourceLine classname="util.Local" sourcefile="Local.java" sourcepath="util/Local.java"/>
+    </Class>
+    <Field classname="util.Local" name="messages" signature="Lutil/LoadableProperties;" isStatic="true">
+      <SourceLine classname="util.Local" sourcefile="Local.java" sourcepath="util/Local.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="util.Local">
+      <SourceLine classname="util.Local" sourcefile="Local.java" sourcepath="util/Local.java"/>
+    </Class>
+    <Field classname="util.Local" name="monthnames" signature="[Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="util.Local" sourcefile="Local.java" sourcepath="util/Local.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="util.Local">
+      <SourceLine classname="util.Local" sourcefile="Local.java" sourcepath="util/Local.java"/>
+    </Class>
+    <Field classname="util.Local" name="weekdaynames" signature="[Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="util.Local" sourcefile="Local.java" sourcepath="util/Local.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="util.Pair">
+      <SourceLine classname="util.Pair" sourcefile="Pair.java" sourcepath="util/Pair.java"/>
+    </Class>
+    <Field classname="util.Pair" name="element" signature="Lnu/xom/Element;" isStatic="false">
+      <SourceLine classname="util.Pair" sourcefile="Pair.java" sourcepath="util/Pair.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="util.Pair">
+      <SourceLine classname="util.Pair" sourcefile="Pair.java" sourcepath="util/Pair.java"/>
+    </Class>
+    <Field classname="util.Pair" name="priority" signature="I" isStatic="false">
+      <SourceLine classname="util.Pair" sourcefile="Pair.java" sourcepath="util/Pair.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="util.PriorityQueue">
+      <SourceLine classname="util.PriorityQueue" sourcefile="PriorityQueue.java" sourcepath="util/PriorityQueue.java"/>
+    </Class>
+    <Method classname="util.PriorityQueue" name="Vacia" signature="()Z" isStatic="false">
+      <SourceLine classname="util.PriorityQueue" start="53" end="53" startBytecode="0" endBytecode="51" sourcefile="PriorityQueue.java" sourcepath="util/PriorityQueue.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="util.PriorityQueue">
+      <SourceLine classname="util.PriorityQueue" sourcefile="PriorityQueue.java" sourcepath="util/PriorityQueue.java"/>
+    </Class>
+    <Field classname="util.PriorityQueue" name="a" signature="[Lutil/Pair;" isStatic="false">
+      <SourceLine classname="util.PriorityQueue" sourcefile="PriorityQueue.java" sourcepath="util/PriorityQueue.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="util.PriorityQueue">
+      <SourceLine classname="util.PriorityQueue" sourcefile="PriorityQueue.java" sourcepath="util/PriorityQueue.java"/>
+    </Class>
+    <Field classname="util.PriorityQueue" name="n" signature="I" isStatic="false">
+      <SourceLine classname="util.PriorityQueue" sourcefile="PriorityQueue.java" sourcepath="util/PriorityQueue.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="util.ProjectExporter">
+      <SourceLine classname="util.ProjectExporter" sourcefile="ProjectExporter.java" sourcepath="util/ProjectExporter.java"/>
+    </Class>
+    <Field classname="util.ProjectExporter" name="charsetString" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="util.ProjectExporter" sourcefile="ProjectExporter.java" sourcepath="util/ProjectExporter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="util.ProjectExporter">
+      <SourceLine classname="util.ProjectExporter" sourcefile="ProjectExporter.java" sourcepath="util/ProjectExporter.java"/>
+    </Class>
+    <Field classname="util.ProjectExporter" name="output" signature="Ljava/io/File;" isStatic="true">
+      <SourceLine classname="util.ProjectExporter" sourcefile="ProjectExporter.java" sourcepath="util/ProjectExporter.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="util.ProjectPackager">
+      <SourceLine classname="util.ProjectPackager" sourcefile="ProjectPackager.java" sourcepath="util/ProjectPackager.java"/>
+    </Class>
+    <Method classname="util.ProjectPackager" name="PackDirectory" signature="(Ljava/lang/String;Ljava/io/File;Ljava/util/zip/ZipOutputStream;)V" isStatic="true">
+      <SourceLine classname="util.ProjectPackager" start="135" end="135" startBytecode="0" endBytecode="41" sourcefile="ProjectPackager.java" sourcepath="util/ProjectPackager.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="util.ProjectPackager">
+      <SourceLine classname="util.ProjectPackager" sourcefile="ProjectPackager.java" sourcepath="util/ProjectPackager.java"/>
+    </Class>
+    <Field classname="util.ProjectPackager" name="JN_DOCPATH" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="util.ProjectPackager" sourcefile="ProjectPackager.java" sourcepath="util/ProjectPackager.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD" priority="2" rank="17" abbrev="UuF" category="STYLE" first="1">
+    <Class classname="util.TaskListVersioning">
+      <SourceLine classname="util.TaskListVersioning" sourcefile="TaskListVersioning.java" sourcepath="util/TaskListVersioning.java"/>
+    </Class>
+    <Field classname="util.TaskListVersioning" name="VERSIONS" signature="[Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="util.TaskListVersioning" sourcefile="TaskListVersioning.java" sourcepath="util/TaskListVersioning.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="util.Util">
+      <SourceLine classname="util.Util" sourcefile="Util.java" sourcepath="util/Util.java"/>
+    </Class>
+    <Field classname="util.Util" name="seed" signature="J" isStatic="true">
+      <SourceLine classname="util.Util" sourcefile="Util.java" sourcepath="util/Util.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="util.Util">
+      <SourceLine classname="util.Util" sourcefile="Util.java" sourcepath="util/Util.java"/>
+    </Class>
+    <Field classname="util.Util" name="tempFiles" signature="Ljava/util/Set;" isStatic="true">
+      <SourceLine classname="util.Util" sourcefile="Util.java" sourcepath="util/Util.java"/>
+    </Field>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 15 Feb 2016 17:10:46 -0800" total_classes="191" referenced_classes="829" total_bugs="167" total_size="4530" num_packages="10" java_version="1.8.0_72" vm_version="25.72-b15" cpu_seconds="84.55" clock_seconds="27.56" peak_mbytes="606.27" alloc_mbytes="910.50" gc_seconds="0.42" priority_2="165" priority_1="2">
+    <PackageStats package="" total_bugs="33" total_types="41" total_size="772" priority_2="32" priority_1="1">
+      <ClassStats class="CurrentNote" sourceFile="CurrentNote.java" interface="false" size="17" bugs="2" priority_2="2"/>
+      <ClassStats class="CurrentProject" sourceFile="CurrentProject.java" interface="false" size="30" bugs="1" priority_2="1"/>
+      <ClassStats class="DefaultEventNotifier" sourceFile="DefaultEventNotifier.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="Event" sourceFile="Event.java" interface="true" size="16" bugs="0"/>
+      <ClassStats class="EventImpl" sourceFile="EventImpl.java" interface="false" size="34" bugs="1" priority_2="1"/>
+      <ClassStats class="EventNotificationListener" sourceFile="EventNotificationListener.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="EventsManager" sourceFile="EventsManager.java" interface="false" size="48" bugs="0"/>
+      <ClassStats class="EventsManager$Day" sourceFile="EventsManager.java" interface="false" size="8" bugs="1" priority_2="1"/>
+      <ClassStats class="EventsManager$Month" sourceFile="EventsManager.java" interface="false" size="14" bugs="1" priority_2="1"/>
+      <ClassStats class="EventsManager$Year" sourceFile="EventsManager.java" interface="false" size="14" bugs="1" priority_2="1"/>
+      <ClassStats class="EventsScheduler" sourceFile="EventsScheduler.java" interface="false" size="24" bugs="1" priority_2="1"/>
+      <ClassStats class="EventsScheduler$EventTimer" sourceFile="EventsScheduler.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="EventsScheduler$NotifyTask" sourceFile="EventsScheduler.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="GoogleMail" sourceFile="GoogleMail.java" interface="false" size="32" bugs="2" priority_2="2"/>
+      <ClassStats class="History" sourceFile="History.java" interface="false" size="26" bugs="6" priority_2="6"/>
+      <ClassStats class="History$HistoryBackAction" sourceFile="History.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="History$HistoryForwardAction" sourceFile="History.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="HistoryItem" sourceFile="HistoryItem.java" interface="false" size="12" bugs="2" priority_2="2"/>
+      <ClassStats class="HistoryListener" sourceFile="HistoryListener.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="Note" sourceFile="Note.java" interface="true" size="11" bugs="0"/>
+      <ClassStats class="NoteImpl" sourceFile="NoteImpl.java" interface="false" size="23" bugs="1" priority_2="1"/>
+      <ClassStats class="NoteList" sourceFile="NoteList.java" interface="true" size="11" bugs="0"/>
+      <ClassStats class="NoteListImpl" sourceFile="NoteListImpl.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="NoteListImpl$Day" sourceFile="NoteListImpl.java" interface="false" size="15" bugs="2" priority_2="2"/>
+      <ClassStats class="NoteListImpl$Month" sourceFile="NoteListImpl.java" interface="false" size="15" bugs="2" priority_2="2"/>
+      <ClassStats class="NoteListImpl$NoteElement" sourceFile="NoteListImpl.java" interface="false" size="7" bugs="2" priority_2="2"/>
+      <ClassStats class="NoteListImpl$Year" sourceFile="NoteListImpl.java" interface="false" size="15" bugs="2" priority_2="2"/>
+      <ClassStats class="NoteListener" sourceFile="NoteListener.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="Project" sourceFile="Project.java" interface="true" size="20" bugs="0"/>
+      <ClassStats class="ProjectImpl" sourceFile="ProjectImpl.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="ProjectListener" sourceFile="ProjectListener.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="ProjectManager" sourceFile="ProjectManager.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="Resource" sourceFile="Resource.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="ResourcesList" sourceFile="ResourcesList.java" interface="true" size="10" bugs="0"/>
+      <ClassStats class="ResourcesListImpl" sourceFile="ResourcesListImpl.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="SLThread" sourceFile="Start.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="Start" sourceFile="Start.java" interface="false" size="8" bugs="3" priority_2="3"/>
+      <ClassStats class="Task" sourceFile="Task.java" interface="true" size="42" bugs="0"/>
+      <ClassStats class="TaskImpl" sourceFile="TaskImpl.java" interface="false" size="81" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="TaskList" sourceFile="TaskList.java" interface="true" size="17" bugs="0"/>
+      <ClassStats class="TaskListImpl" sourceFile="TaskListImpl.java" interface="false" size="48" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="date" total_bugs="3" total_types="3" total_size="73" priority_2="2" priority_1="1">
+      <ClassStats class="date.CalendarDate" sourceFile="CalendarDate.java" interface="false" size="52" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="date.CurrentDate" sourceFile="CurrentDate.java" interface="false" size="17" bugs="1" priority_2="1"/>
+      <ClassStats class="date.DateListener" sourceFile="DateListener.java" interface="true" size="4" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="tests" total_bugs="3" total_types="1" total_size="20" priority_2="3">
+      <ClassStats class="tests.CalendarDateTest" sourceFile="CalendarDateTest.java" interface="false" size="20" bugs="3" priority_2="3"/>
+    </PackageStats>
+    <PackageStats package="ui" total_bugs="19" total_types="73" total_size="2030" priority_2="19">
+      <ClassStats class="ui.AddResourceDialog" sourceFile="AddResourceDialog.java" interface="false" size="40" bugs="0"/>
+      <ClassStats class="ui.AgendaPanel" sourceFile="AgendaPanel.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="ui.AllFilesFilter" sourceFile="AllFilesFilter.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="ui.App" sourceFile="App.java" interface="false" size="20" bugs="2" priority_2="2"/>
+      <ClassStats class="ui.AppFrame" sourceFile="AppFrame.java" interface="false" size="139" bugs="0"/>
+      <ClassStats class="ui.AppFrame_AboutBox" sourceFile="AppFrame_AboutBox.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="ui.BookmarksPanel" sourceFile="BookmarksPanel.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="ui.CalendarFrame" sourceFile="CalendarFrame.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="ui.DailyItemsPanel" sourceFile="DailyItemsPanel.java" interface="false" size="74" bugs="0"/>
+      <ClassStats class="ui.EditTypeDialog" sourceFile="EditTypeDialog.java" interface="false" size="63" bugs="0"/>
+      <ClassStats class="ui.EditorPanel" sourceFile="EditorPanel.java" interface="false" size="54" bugs="0"/>
+      <ClassStats class="ui.EventDialog" sourceFile="EventDialog.java" interface="false" size="89" bugs="0"/>
+      <ClassStats class="ui.EventNotificationDialog" sourceFile="EventNotificationDialog.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="ui.EventsPanel" sourceFile="EventsPanel.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="ui.EventsPanel$PopupListener" sourceFile="EventsPanel.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="ui.EventsTable" sourceFile="EventsTable.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="ui.EventsTable$EventsTableModel" sourceFile="EventsTable.java" interface="false" size="13" bugs="1" priority_2="1"/>
+      <ClassStats class="ui.ExceptionDialog" sourceFile="ExceptionDialog.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="ui.ExitConfirmationDialog" sourceFile="ExitConfirmationDialog.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="ui.ExpandablePanel" sourceFile="ExpandablePanel.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="ui.ExportFilter" sourceFile="ExportFilter.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="ui.ExportSticker" sourceFile="ExportSticker.java" interface="false" size="10" bugs="1" priority_2="1"/>
+      <ClassStats class="ui.FileExportDialog" sourceFile="FileExportDialog.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="ui.ImportSticker" sourceFile="ImportSticker.java" interface="false" size="6" bugs="1" priority_2="1"/>
+      <ClassStats class="ui.JNCalendar" sourceFile="JNCalendar.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="ui.JNCalendar$JNCalendarModel" sourceFile="JNCalendar.java" interface="false" size="13" bugs="1" priority_2="1"/>
+      <ClassStats class="ui.JNCalendarCellRenderer" sourceFile="JNCalendarCellRenderer.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="ui.JNCalendarPanel" sourceFile="JNCalendarPanel.java" interface="false" size="51" bugs="0"/>
+      <ClassStats class="ui.NotesControlPanel" sourceFile="NotesControlPanel.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="ui.NotesControlPanel$PopupListener" sourceFile="NotesControlPanel.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="ui.NotesList" sourceFile="NotesList.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="ui.NotesList$NotesListModel" sourceFile="NotesList.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="ui.NotesListPanel" sourceFile="NotesListPanel.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="ui.PreferencesDialog" sourceFile="PreferencesDialog.java" interface="false" size="123" bugs="0"/>
+      <ClassStats class="ui.ProjectDialog" sourceFile="ProjectDialog.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="ui.ProjectExportDialog" sourceFile="ProjectExportDialog.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="ui.ProjectsPanel" sourceFile="ProjectsPanel.java" interface="false" size="45" bugs="1" priority_2="1"/>
+      <ClassStats class="ui.ProjectsPanel$PopupListener" sourceFile="ProjectsPanel.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="ui.ProjectsTablePanel" sourceFile="ProjectsTablePanel.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="ui.ProjectsTablePanel$PrjTableModel" sourceFile="ProjectsTablePanel.java" interface="false" size="13" bugs="1" priority_2="1"/>
+      <ClassStats class="ui.ResourceTypeDialog" sourceFile="ResourceTypeDialog.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="ui.ResourceTypePanel" sourceFile="ResourceTypePanel.java" interface="false" size="33" bugs="0"/>
+      <ClassStats class="ui.ResourceTypePanel$TypesListRenderer" sourceFile="ResourceTypePanel.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="ui.ResourcesPanel" sourceFile="ResourcesPanel.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="ui.ResourcesPanel$PopupListener" sourceFile="ResourcesPanel.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="ui.ResourcesTable" sourceFile="ResourcesTable.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="ui.ResourcesTable$ResourcesTableModel" sourceFile="ResourcesTable.java" interface="false" size="15" bugs="1" priority_2="1"/>
+      <ClassStats class="ui.SearchPanel" sourceFile="SearchPanel.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="ui.SetAppDialog" sourceFile="SetAppDialog.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="ui.SetApplicationPanel" sourceFile="SetApplicationPanel.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="ui.StickerConfirmation" sourceFile="StickerConfirmation.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="ui.StickerDialog" sourceFile="StickerDialog.java" interface="false" size="69" bugs="0"/>
+      <ClassStats class="ui.StickerDialog$ComboBoxRenderer" sourceFile="StickerDialog.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="ui.StickerDialog$ComboBoxRenderer2" sourceFile="StickerDialog.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="ui.StickerExpand" sourceFile="StickerExpand.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="ui.TaskCalcDialog" sourceFile="TaskCalcDialog.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="ui.TaskDialog" sourceFile="TaskDialog.java" interface="false" size="76" bugs="0"/>
+      <ClassStats class="ui.TaskPanel" sourceFile="TaskPanel.java" interface="false" size="57" bugs="0"/>
+      <ClassStats class="ui.TaskPanel$PopupListener" sourceFile="TaskPanel.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="ui.TaskProgressEditor" sourceFile="TaskProgressEditor.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="ui.TaskProgressLabel" sourceFile="TaskProgressLabel.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="ui.TaskTable" sourceFile="TaskTable.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="ui.TaskTable$ExpansionHandler" sourceFile="TaskTable.java" interface="false" size="11" bugs="2" priority_2="2"/>
+      <ClassStats class="ui.TaskTable$ListToTreeSelectionModelWrapper" sourceFile="TaskTable.java" interface="false" size="13" bugs="1" priority_2="1"/>
+      <ClassStats class="ui.TaskTable$ListToTreeSelectionModelWrapper$ListSelectionHandler" sourceFile="TaskTable.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="ui.TaskTable$TreeTableCellEditor" sourceFile="TaskTable.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="ui.TaskTable$TreeTableCellRenderer" sourceFile="TaskTable.java" interface="false" size="15" bugs="1" priority_2="1"/>
+      <ClassStats class="ui.TaskTableModel" sourceFile="TaskTableModel.java" interface="false" size="32" bugs="3" priority_2="3"/>
+      <ClassStats class="ui.TaskTableSorter" sourceFile="TaskTableSorter.java" interface="false" size="8" bugs="3" priority_2="3"/>
+      <ClassStats class="ui.TaskTableSorter$MouseHandler" sourceFile="TaskTableSorter.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="ui.TaskTableSorter$SortableHeaderRenderer" sourceFile="TaskTableSorter.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="ui.TaskTreeTableCellRenderer" sourceFile="TaskTreeTableCellRenderer.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="ui.WorkPanel" sourceFile="WorkPanel.java" interface="false" size="32" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="ui.htmleditor" total_bugs="66" total_types="37" total_size="972" priority_2="66">
+      <ClassStats class="ui.htmleditor.AltHTMLWriter" sourceFile="AltHTMLWriter.java" interface="false" size="92" bugs="19" priority_2="19"/>
+      <ClassStats class="ui.htmleditor.AltHTMLWriter$CircleRegionContainment" sourceFile="AltHTMLWriter.java" interface="false" size="11" bugs="6" priority_2="6"/>
+      <ClassStats class="ui.htmleditor.AltHTMLWriter$DefaultRegionContainment" sourceFile="AltHTMLWriter.java" interface="false" size="8" bugs="1" priority_2="1"/>
+      <ClassStats class="ui.htmleditor.AltHTMLWriter$Map" sourceFile="AltHTMLWriter.java" interface="false" size="20" bugs="4" priority_2="4"/>
+      <ClassStats class="ui.htmleditor.AltHTMLWriter$OptionComboBoxModel" sourceFile="AltHTMLWriter.java" interface="false" size="9" bugs="2" priority_2="2"/>
+      <ClassStats class="ui.htmleditor.AltHTMLWriter$OptionListModel" sourceFile="AltHTMLWriter.java" interface="false" size="96" bugs="3" priority_2="3"/>
+      <ClassStats class="ui.htmleditor.AltHTMLWriter$PolygonRegionContainment" sourceFile="AltHTMLWriter.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="ui.htmleditor.AltHTMLWriter$RectangleRegionContainment" sourceFile="AltHTMLWriter.java" interface="false" size="14" bugs="7" priority_2="7"/>
+      <ClassStats class="ui.htmleditor.AltHTMLWriter$RegionContainment" sourceFile="AltHTMLWriter.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="ui.htmleditor.CharTablePanel" sourceFile="CharTablePanel.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="ui.htmleditor.CharTablePanel$CharAction" sourceFile="CharTablePanel.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="ui.htmleditor.Context" sourceFile="Context.java" interface="false" size="8" bugs="1" priority_2="1"/>
+      <ClassStats class="ui.htmleditor.ContinueSearchDialog" sourceFile="ContinueSearchDialog.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="ui.htmleditor.ElementDialog" sourceFile="ElementDialog.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="ui.htmleditor.FindDialog" sourceFile="FindDialog.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="ui.htmleditor.Finder" sourceFile="Finder.java" interface="false" size="13" bugs="3" priority_2="3"/>
+      <ClassStats class="ui.htmleditor.FontDialog" sourceFile="FontDialog.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="ui.htmleditor.HTMLEditor" sourceFile="HTMLEditor.java" interface="false" size="186" bugs="17" priority_2="17"/>
+      <ClassStats class="ui.htmleditor.HTMLEditor$BlockAction" sourceFile="HTMLEditor.java" interface="false" size="7" bugs="1" priority_2="1"/>
+      <ClassStats class="ui.htmleditor.HTMLEditor$BreakAction" sourceFile="HTMLEditor.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="ui.htmleditor.HTMLEditor$HTMLEditorAction" sourceFile="HTMLEditor.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="ui.htmleditor.HTMLEditor$InlineAction" sourceFile="HTMLEditor.java" interface="false" size="7" bugs="1" priority_2="1"/>
+      <ClassStats class="ui.htmleditor.HTMLEditor$InsertTableCellAction" sourceFile="HTMLEditor.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="ui.htmleditor.HTMLEditor$InsertTableRowAction" sourceFile="HTMLEditor.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="ui.htmleditor.HTMLEditor$ParaBreakAction" sourceFile="HTMLEditor.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="ui.htmleditor.HTMLEditor$PopupListener" sourceFile="HTMLEditor.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="ui.htmleditor.HTMLEditor$RedoAction" sourceFile="HTMLEditor.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="ui.htmleditor.HTMLEditor$UndoAction" sourceFile="HTMLEditor.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="ui.htmleditor.HTMLEditor$UndoHandler" sourceFile="HTMLEditor.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="ui.htmleditor.HTMLEditorPane" sourceFile="HTMLEditorPane.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="ui.htmleditor.ImageDialog" sourceFile="ImageDialog.java" interface="false" size="58" bugs="0"/>
+      <ClassStats class="ui.htmleditor.LinkDialog" sourceFile="LinkDialog.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="ui.htmleditor.ReplaceOptionsDialog" sourceFile="ReplaceOptionsDialog.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="ui.htmleditor.SrcDialog" sourceFile="SrcDialog.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="ui.htmleditor.TableDialog" sourceFile="TableDialog.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="ui.htmleditor.TdDialog" sourceFile="TdDialog.java" interface="false" size="109" bugs="0"/>
+      <ClassStats class="ui.htmleditor.Util" sourceFile="Util.java" interface="false" size="16" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="ui.htmleditor.filechooser" total_bugs="0" total_types="3" total_size="27">
+      <ClassStats class="ui.htmleditor.filechooser.ImageFilter" sourceFile="ImageFilter.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="ui.htmleditor.filechooser.ImagePreview" sourceFile="ImagePreview.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="ui.htmleditor.filechooser.Utils" sourceFile="Utils.java" interface="false" size="9" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="ui.htmleditor.util" total_bugs="1" total_types="1" total_size="8" priority_2="1">
+      <ClassStats class="ui.htmleditor.util.Local" sourceFile="Local.java" interface="false" size="8" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="ui.table" total_bugs="0" total_types="2" total_size="67">
+      <ClassStats class="ui.table.TableMap" sourceFile="TableMap.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="ui.table.TableSorter" sourceFile="TableSorter.java" interface="false" size="43" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="ui.treetable" total_bugs="7" total_types="10" total_size="151" priority_2="7">
+      <ClassStats class="ui.treetable.AbstractCellEditor" sourceFile="AbstractCellEditor.java" interface="false" size="22" bugs="1" priority_2="1"/>
+      <ClassStats class="ui.treetable.AbstractTreeTableModel" sourceFile="AbstractTreeTableModel.java" interface="false" size="31" bugs="2" priority_2="2"/>
+      <ClassStats class="ui.treetable.JTreeTable" sourceFile="JTreeTable.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="ui.treetable.JTreeTable$ListToTreeSelectionModelWrapper" sourceFile="JTreeTable.java" interface="false" size="13" bugs="1" priority_2="1"/>
+      <ClassStats class="ui.treetable.JTreeTable$ListToTreeSelectionModelWrapper$ListSelectionHandler" sourceFile="JTreeTable.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="ui.treetable.JTreeTable$TreeTableCellEditor" sourceFile="JTreeTable.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="ui.treetable.JTreeTable$TreeTableCellRenderer" sourceFile="JTreeTable.java" interface="false" size="15" bugs="1" priority_2="1"/>
+      <ClassStats class="ui.treetable.MergeSort" sourceFile="MergeSort.java" interface="false" size="12" bugs="2" priority_2="2"/>
+      <ClassStats class="ui.treetable.TreeTableModel" sourceFile="TreeTableModel.java" interface="true" size="9" bugs="0"/>
+      <ClassStats class="ui.treetable.TreeTableModelAdapter" sourceFile="TreeTableModelAdapter.java" interface="false" size="23" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="util" total_bugs="35" total_types="20" total_size="410" priority_2="35">
+      <ClassStats class="util.AgendaGenerator" sourceFile="AgendaGenerator.java" interface="false" size="31" bugs="2" priority_2="2"/>
+      <ClassStats class="util.AppList" sourceFile="AppList.java" interface="false" size="33" bugs="3" priority_2="3"/>
+      <ClassStats class="util.Configuration" sourceFile="Configuration.java" interface="false" size="13" bugs="2" priority_2="2"/>
+      <ClassStats class="util.Context" sourceFile="Context.java" interface="false" size="8" bugs="1" priority_2="1"/>
+      <ClassStats class="util.CurrentStorage" sourceFile="CurrentStorage.java" interface="false" size="15" bugs="1" priority_2="1"/>
+      <ClassStats class="util.FileStorage" sourceFile="FileStorage.java" interface="false" size="55" bugs="2" priority_2="2"/>
+      <ClassStats class="util.HTMLFileExport" sourceFile="HTMLFileExport.java" interface="false" size="20" bugs="7" priority_2="7"/>
+      <ClassStats class="util.HTMLFileImport" sourceFile="HTMLFileImport.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="util.LoadableProperties" sourceFile="LoadableProperties.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="util.Local" sourceFile="Local.java" interface="false" size="38" bugs="5" priority_2="5"/>
+      <ClassStats class="util.MimeType" sourceFile="MimeType.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="util.MimeTypesList" sourceFile="MimeTypesList.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="util.Pair" sourceFile="Pair.java" interface="false" size="13" bugs="2" priority_2="2"/>
+      <ClassStats class="util.PriorityQueue" sourceFile="PriorityQueue.java" interface="false" size="11" bugs="3" priority_2="3"/>
+      <ClassStats class="util.ProjectExporter" sourceFile="ProjectExporter.java" interface="false" size="24" bugs="2" priority_2="2"/>
+      <ClassStats class="util.ProjectPackager" sourceFile="ProjectPackager.java" interface="false" size="10" bugs="2" priority_2="2"/>
+      <ClassStats class="util.RTFFileExport" sourceFile="RTFFileExport.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="util.Storage" sourceFile="Storage.java" interface="true" size="23" bugs="0"/>
+      <ClassStats class="util.TaskListVersioning" sourceFile="TaskListVersioning.java" interface="false" size="14" bugs="1" priority_2="1"/>
+      <ClassStats class="util.Util" sourceFile="Util.java" interface="false" size="31" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="2334" invocations="2" avgMicrosecondsPerInvocation="1167349" maxMicrosecondsPerInvocation="1443497" standardDeviationMircosecondsPerInvocation="276146"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="1855" invocations="829" avgMicrosecondsPerInvocation="2237" maxMicrosecondsPerInvocation="116021" standardDeviationMircosecondsPerInvocation="6373"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1726" invocations="2470" avgMicrosecondsPerInvocation="699" maxMicrosecondsPerInvocation="36837" standardDeviationMircosecondsPerInvocation="1383"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="1674" invocations="829" avgMicrosecondsPerInvocation="2019" maxMicrosecondsPerInvocation="45838" standardDeviationMircosecondsPerInvocation="4522"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1222" invocations="2486" avgMicrosecondsPerInvocation="491" maxMicrosecondsPerInvocation="95414" standardDeviationMircosecondsPerInvocation="1954"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="1137" invocations="2514" avgMicrosecondsPerInvocation="452" maxMicrosecondsPerInvocation="25056" standardDeviationMircosecondsPerInvocation="1070"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="658" invocations="1367" avgMicrosecondsPerInvocation="481" maxMicrosecondsPerInvocation="32097" standardDeviationMircosecondsPerInvocation="1286"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="584" invocations="1367" avgMicrosecondsPerInvocation="427" maxMicrosecondsPerInvocation="27146" standardDeviationMircosecondsPerInvocation="961"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="505" invocations="1367" avgMicrosecondsPerInvocation="369" maxMicrosecondsPerInvocation="32700" standardDeviationMircosecondsPerInvocation="1183"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="503" invocations="1367" avgMicrosecondsPerInvocation="368" maxMicrosecondsPerInvocation="31835" standardDeviationMircosecondsPerInvocation="1494"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="486" invocations="1367" avgMicrosecondsPerInvocation="356" maxMicrosecondsPerInvocation="29001" standardDeviationMircosecondsPerInvocation="1333"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="435" invocations="829" avgMicrosecondsPerInvocation="525" maxMicrosecondsPerInvocation="39899" standardDeviationMircosecondsPerInvocation="1731"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="422" invocations="1367" avgMicrosecondsPerInvocation="309" maxMicrosecondsPerInvocation="35544" standardDeviationMircosecondsPerInvocation="1319"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="348" invocations="988" avgMicrosecondsPerInvocation="352" maxMicrosecondsPerInvocation="47851" standardDeviationMircosecondsPerInvocation="1890"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="328" invocations="829" avgMicrosecondsPerInvocation="396" maxMicrosecondsPerInvocation="23827" standardDeviationMircosecondsPerInvocation="1226"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="319" invocations="829" avgMicrosecondsPerInvocation="384" maxMicrosecondsPerInvocation="16042" standardDeviationMircosecondsPerInvocation="860"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SerializableIdiom" totalMilliseconds="306" invocations="191" avgMicrosecondsPerInvocation="1602" maxMicrosecondsPerInvocation="35287" standardDeviationMircosecondsPerInvocation="4678"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="296" invocations="1492" avgMicrosecondsPerInvocation="198" maxMicrosecondsPerInvocation="89342" standardDeviationMircosecondsPerInvocation="2366"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="292" invocations="829" avgMicrosecondsPerInvocation="352" maxMicrosecondsPerInvocation="21144" standardDeviationMircosecondsPerInvocation="1033"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="270" invocations="829" avgMicrosecondsPerInvocation="326" maxMicrosecondsPerInvocation="51421" standardDeviationMircosecondsPerInvocation="2547"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="264" invocations="829" avgMicrosecondsPerInvocation="319" maxMicrosecondsPerInvocation="34195" standardDeviationMircosecondsPerInvocation="1523"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1455585293032" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

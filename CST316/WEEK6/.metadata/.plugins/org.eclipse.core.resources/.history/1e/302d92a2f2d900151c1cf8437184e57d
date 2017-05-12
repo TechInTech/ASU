@@ -1,0 +1,9 @@
+package server;
+
+public class ObservedAccount {
+
+	public ObservedAccount() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

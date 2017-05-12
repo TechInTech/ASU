@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1454200878577" analysisTimestamp="1454200845196" release="">
+  <Project projectName="CST316 JUnit given">
+    <Jar>C:\CST316\WORKSPACE316\CST316 JUnit given\classes\banking\gui\Main.class</Jar>
+    <AuxClasspathEntry>C:\CST316\WORKSPACE316\CST316 JUnit given\classes</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Hieu\Downloads\eclipse-jee-mars-1-win32-x86_64\eclipse\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Hieu\Downloads\eclipse-jee-mars-1-win32-x86_64\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jdk1.8.0_72\jre\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>C:\CST316\WORKSPACE316\CST316 JUnit given\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sat, 30 Jan 2016 16:40:22 -0800" total_classes="1" referenced_classes="15" total_bugs="0" total_size="12" num_packages="1" java_version="1.8.0_45" vm_version="25.45-b02" cpu_seconds="65.97" clock_seconds="33.51" peak_mbytes="416.29" alloc_mbytes="910.50" gc_seconds="0.25">
+    <PackageStats package="banking.gui" total_bugs="0" total_types="1" total_size="12">
+      <ClassStats class="banking.gui.Main" sourceFile="Main.java" interface="false" size="12" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="4238" invocations="2" avgMicrosecondsPerInvocation="2119214" maxMicrosecondsPerInvocation="3486421" standardDeviationMircosecondsPerInvocation="1367207"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1644" invocations="400" avgMicrosecondsPerInvocation="4111" maxMicrosecondsPerInvocation="163253" standardDeviationMircosecondsPerInvocation="12689"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="525" invocations="400" avgMicrosecondsPerInvocation="1312" maxMicrosecondsPerInvocation="55028" standardDeviationMircosecondsPerInvocation="4169"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="368" invocations="15" avgMicrosecondsPerInvocation="24539" maxMicrosecondsPerInvocation="80546" standardDeviationMircosecondsPerInvocation="25143"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="229" invocations="15" avgMicrosecondsPerInvocation="15270" maxMicrosecondsPerInvocation="118370" standardDeviationMircosecondsPerInvocation="31032"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1454200878567" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

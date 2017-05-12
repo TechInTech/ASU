@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1460746801524" analysisTimestamp="1460746785177" release="">
+  <Project projectName="Generic1">
+    <Jar>F:\CST216\Generic1\bin\Test1.class</Jar>
+    <AuxClasspathEntry>F:\CST216\Generic1\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jdk1.8.0_45\jre\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>F:\CST216\Generic1\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="Test1">
+      <SourceLine classname="Test1" sourcefile="Test1.java" sourcepath="Test1.java"/>
+    </Class>
+    <Method classname="Test1" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Test1" start="7" end="13" startBytecode="0" endBytecode="32" sourcefile="Test1.java" sourcepath="Test1.java"/>
+    </Method>
+    <LocalVariable name="z" register="3" pc="24" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="Test1" start="10" end="10" startBytecode="23" endBytecode="23" sourcefile="Test1.java" sourcepath="Test1.java"/>
+    <SourceLine classname="Test1" start="10" end="10" startBytecode="23" endBytecode="23" sourcefile="Test1.java" sourcepath="Test1.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="z"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Fri, 15 Apr 2016 11:56:40 -0700" total_classes="1" referenced_classes="12" total_bugs="1" total_size="14" num_packages="1" java_version="1.8.0_77" vm_version="25.77-b03" cpu_seconds="15.56" clock_seconds="16.77" peak_mbytes="680.18" alloc_mbytes="910.50" gc_seconds="0.02" priority_2="1">
+    <PackageStats package="" total_bugs="1" total_types="1" total_size="14" priority_2="1">
+      <ClassStats class="Test1" sourceFile="Test1.java" interface="false" size="14" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="1334" invocations="331" avgMicrosecondsPerInvocation="4031" maxMicrosecondsPerInvocation="28606" standardDeviationMircosecondsPerInvocation="2717"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="1030" invocations="2" avgMicrosecondsPerInvocation="515475" maxMicrosecondsPerInvocation="823787" standardDeviationMircosecondsPerInvocation="308312"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="274" invocations="331" avgMicrosecondsPerInvocation="829" maxMicrosecondsPerInvocation="66005" standardDeviationMircosecondsPerInvocation="3728"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1460746801521" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

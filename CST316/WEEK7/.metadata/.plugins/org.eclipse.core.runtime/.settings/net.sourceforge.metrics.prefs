@@ -1,0 +1,7 @@
+LCOM.StaticAttributes=true
+LCOM.StaticMethods=true
+METRICS.lastPrefChange=1456683656701
+NORM.Abstract=true
+NORM.ExludeList=toString,hashCode,equals
+NORM.Super=true
+eclipse.preferences.version=1

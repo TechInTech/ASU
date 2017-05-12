@@ -1,0 +1,5 @@
+Reading from file accounts.ser...
+testNewAccount(banking.primitive.core.AccountServerTest): failed to add new acocunts
+testGetAccount(banking.primitive.core.AccountServerTest): null
+testNewAccountType(banking.primitive.core.AccountServerTest): Expected exception: java.lang.IllegalArgumentException
+false

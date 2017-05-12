@@ -1,0 +1,78 @@
+!SESSION 2017-04-23 01:03:00.067 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui 2 0 2017-04-23 01:04:52.355
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2017-04-23 01:04:52.355
+!MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'
+
+!ENTRY org.eclipse.ui 2 0 2017-04-23 01:04:52.873
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2017-04-23 01:04:52.873
+!MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'
+
+!ENTRY org.eclipse.jface 2 0 2017-04-23 01:04:54.525
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-04-23 01:04:54.525
+!MESSAGE A conflict occurred for CTRL+SHIFT+V:
+Binding(CTRL+SHIFT+V,
+	ParameterizedCommand(Command(org.eclipse.jdt.debug.ui.command.OpenFromClipboard,Open from Clipboard,
+		Opens a Java element or a Java stack trace from clipboard,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@61d61b0e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+V,
+	ParameterizedCommand(Command(com.jformdesigner.eclipse.NewFormAction,New JFormDesigner Form,
+		New JFormDesigner Form,
+		Category(com.jformdesigner.eclipse.commands.category,JFormDesigner,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3c2188f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-04-23 01:04:54.525
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@646bf8a6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(pl.szpinda.plugin.tomcat.commands.tomcatStartStop,Tomcat start,stop,
+		,
+		Category(pl.szpinda.plugin.tomcat.commands.category.key,Tomcat keys,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4a094f90,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui 4 4 2017-04-23 01:04:56.102
+!MESSAGE Referenced part does not exist yet: org.eclipse.ui.views.TaskList.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-23 01:04:59.423
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\hieup'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.gwtplugins.gdt.eclipse.suite 1 0 2017-04-23 01:05:35.715
+!MESSAGE Registering: com.gwtplugins.gwt.eclipse.sdkbundle.gwt27_2.7.0.201611042254
+
+!ENTRY com.gwtplugins.gwt.eclipse.wtp 1 1 2017-04-23 01:05:35.750
+!MESSAGE GWT: GWT Facet startup
+
+!ENTRY com.gwtplugins.gdt.eclipse.suite 1 0 2017-04-23 01:05:35.832
+!MESSAGE Registering: com.gwtplugins.gwt.eclipse.sdkbundle.gwt28_2.8.0.201611042254
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-04-23 01:43:17.087
+!MESSAGE No repository found at jar:file:/C:/SER316_Reference/br.ufla.dcc.plugin.FanIn-master.zip!/.

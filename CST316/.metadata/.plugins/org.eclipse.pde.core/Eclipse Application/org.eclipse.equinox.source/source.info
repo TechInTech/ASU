@@ -1,0 +1,9 @@
+#encoding=UTF-8
+#version=1
+org.eclipse.egit.core.source,4.2.0.201601211800-r,file:/C:/Users/Hieu/Downloads/eclipse-jee-mars-1-win32-x86_64/eclipse/plugins/org.eclipse.egit.core.source_4.2.0.201601211800-r.jar,-1,false
+org.eclipse.egit.gitflow.source,4.2.0.201601211800-r,file:/C:/Users/Hieu/Downloads/eclipse-jee-mars-1-win32-x86_64/eclipse/plugins/org.eclipse.egit.gitflow.source_4.2.0.201601211800-r.jar,-1,false
+org.eclipse.egit.gitflow.ui.source,4.2.0.201601211800-r,file:/C:/Users/Hieu/Downloads/eclipse-jee-mars-1-win32-x86_64/eclipse/plugins/org.eclipse.egit.gitflow.ui.source_4.2.0.201601211800-r.jar,-1,false
+org.eclipse.egit.mylyn.ui.source,4.2.0.201601211800-r,file:/C:/Users/Hieu/Downloads/eclipse-jee-mars-1-win32-x86_64/eclipse/plugins/org.eclipse.egit.mylyn.ui.source_4.2.0.201601211800-r.jar,-1,false
+org.eclipse.egit.ui.source,4.2.0.201601211800-r,file:/C:/Users/Hieu/Downloads/eclipse-jee-mars-1-win32-x86_64/eclipse/plugins/org.eclipse.egit.ui.source_4.2.0.201601211800-r.jar,-1,false
+org.eclipse.jgit.pgm.source,4.2.0.201601211800-r,file:/C:/Users/Hieu/Downloads/eclipse-jee-mars-1-win32-x86_64/eclipse/plugins/org.eclipse.jgit.pgm.source_4.2.0.201601211800-r.jar,-1,false
+org.eclipse.jgit.source,4.2.0.201601211800-r,file:/C:/Users/Hieu/Downloads/eclipse-jee-mars-1-win32-x86_64/eclipse/plugins/org.eclipse.jgit.source_4.2.0.201601211800-r.jar,-1,false

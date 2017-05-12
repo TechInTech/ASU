@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="net/sf/memoranda/" kind="src" path="src"/>
+	<classpathentry kind="src" path="src/net/sf/memoranda"/>
+	<classpathentry kind="lib" path="lib/asm-debug-all-5.0.2.jar"/>
+	<classpathentry kind="lib" path="lib/bcel-6.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="lib/checkstyle-6.15-all.jar"/>
+	<classpathentry kind="lib" path="lib/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang3-3.3.2.jar"/>
+	<classpathentry kind="lib" path="lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="lib/findbugs-ant.jar"/>
+	<classpathentry kind="lib" path="lib/findbugs.jar"/>
+	<classpathentry kind="lib" path="lib/jacocoagent.jar"/>
+	<classpathentry kind="lib" path="lib/jacocoant.jar"/>
+	<classpathentry kind="lib" path="lib/javax.mail.jar"/>
+	<classpathentry kind="lib" path="lib/jaxen-1.1.6.jar"/>
+	<classpathentry kind="lib" path="lib/jFormatString.jar"/>
+	<classpathentry kind="lib" path="lib/jsr305.jar"/>
+	<classpathentry kind="lib" path="lib/junit-4.10.jar"/>
+	<classpathentry kind="lib" path="lib/nekohtml.jar"/>
+	<classpathentry kind="lib" path="lib/nekohtmlXni.jar"/>
+	<classpathentry kind="lib" path="lib/swag.jar"/>
+	<classpathentry kind="lib" path="lib/swexpl.jar"/>
+	<classpathentry kind="lib" path="lib/xercesImpl.jar"/>
+	<classpathentry kind="lib" path="lib/xmlParserAPIs.jar"/>
+	<classpathentry kind="lib" path="lib/xom-1.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="classes"/>
+</classpath>

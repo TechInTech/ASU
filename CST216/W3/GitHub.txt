@@ -1,0 +1,7 @@
+git config --global user.name hqpham
+git config --global user.email hqpham@asu.edu
+git clone git@github.com:hqpham/CST216.git
+git add .
+git commit -m "Created project with Eclipse, check-in, CST216 project, W3."
+git status
+git push --set-upstream git@github.com:hqpham/CST216.git master

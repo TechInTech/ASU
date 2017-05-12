@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1456693257338" analysisTimestamp="1456693241594" release="">
+  <Project projectName="MetricsLab">
+    <Jar>C:\CST316\WEEK7\MetricsLab\classes</Jar>
+    <AuxClasspathEntry>C:\CST316\WEEK7\MetricsLab\classes</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Hieu\.p2\pool\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Hieu\.p2\pool\plugins\org.hamcrest.core_1.3.0.v201303031735.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jdk1.8.0_72\jre\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>C:\CST316\WEEK7\MetricsLab\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="gui.MainFrame">
+      <SourceLine classname="gui.MainFrame" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java"/>
+    </Class>
+    <Method classname="gui.MainFrame" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="gui.MainFrame" start="31" end="48" startBytecode="0" endBytecode="214" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java"/>
+    </Method>
+    <Class classname="java.io.InputStream" role="CLASS_REFTYPE">
+      <SourceLine classname="java.io.InputStream" sourcefile="InputStream.java" sourcepath="java/io/InputStream.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="gui.MainFrame" start="40" end="40" startBytecode="32" endBytecode="32" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="gui.MainFrame" start="41" end="41" startBytecode="36" endBytecode="36" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="gui.MainFrame" start="43" end="43" startBytecode="51" endBytecode="51" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="gui.MainFrame" start="44" end="44" startBytecode="52" endBytecode="52" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="gui.MainFrame" start="45" end="45" startBytecode="56" endBytecode="56" sourcefile="MainFrame.java" sourcepath="gui/MainFrame.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{InputStream x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="primitive.core.AccountServerFactory">
+      <SourceLine classname="primitive.core.AccountServerFactory" sourcefile="AccountServerFactory.java" sourcepath="primitive/core/AccountServerFactory.java"/>
+    </Class>
+    <Field classname="primitive.core.AccountServerFactory" name="singleton" signature="Lprimitive/core/AccountServerFactory;" isStatic="true">
+      <SourceLine classname="primitive.core.AccountServerFactory" sourcefile="AccountServerFactory.java" sourcepath="primitive/core/AccountServerFactory.java"/>
+    </Field>
+    <SourceLine classname="primitive.core.AccountServerFactory" start="6" end="6" startBytecode="1" endBytecode="1" sourcefile="AccountServerFactory.java" sourcepath="primitive/core/AccountServerFactory.java"/>
+  </BugInstance>
+  <BugInstance type="GC_UNRELATED_TYPES" priority="1" rank="1" abbrev="GC" category="CORRECTNESS" first="1">
+    <Class classname="primitive.core.ServerSolution">
+      <SourceLine classname="primitive.core.ServerSolution" sourcefile="ServerSolution.java" sourcepath="primitive/core/ServerSolution.java"/>
+    </Class>
+    <Method classname="primitive.core.ServerSolution" name="saveAccounts" signature="()V" isStatic="false">
+      <SourceLine classname="primitive.core.ServerSolution" start="106" end="132" startBytecode="0" endBytecode="66" sourcefile="ServerSolution.java" sourcepath="primitive/core/ServerSolution.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/Integer;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.Integer" start="52" end="1590" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Type>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_EXPECTED">
+      <SourceLine classname="java.lang.String" start="111" end="3141" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Type>
+    <Method classname="java.util.Map" name="get" signature="(Ljava/lang/Object;)Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Map" sourcefile="Map.java" sourcepath="java/util/Map.java"/>
+    </Method>
+    <Field classname="primitive.core.ServerSolution" name="accountMap" signature="Ljava/util/Map;" sourceSignature="Ljava/util/Map&lt;Ljava/lang/String;Lprimitive/core/Account;&gt;;" isStatic="false" role="FIELD_INVOKED_ON">
+      <SourceLine classname="primitive.core.ServerSolution" sourcefile="ServerSolution.java" sourcepath="primitive/core/ServerSolution.java"/>
+    </Field>
+    <Method classname="java.lang.Integer" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_EQUALS_USED">
+      <SourceLine classname="java.lang.Integer" start="974" end="977" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="primitive.core.ServerSolution" start="113" end="113" startBytecode="50" endBytecode="50" sourcefile="ServerSolution.java" sourcepath="primitive/core/ServerSolution.java"/>
+    <SourceLine classname="primitive.core.ServerSolution" start="113" end="113" startBytecode="50" endBytecode="50" sourcefile="ServerSolution.java" sourcepath="primitive/core/ServerSolution.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 28 Feb 2016 12:16:45 -0800" total_classes="16" referenced_classes="309" total_bugs="3" total_size="414" num_packages="2" java_version="1.8.0_72" vm_version="25.72-b15" cpu_seconds="47.20" clock_seconds="15.77" peak_mbytes="582.47" alloc_mbytes="910.50" gc_seconds="0.13" priority_2="2" priority_1="1">
+    <PackageStats package="gui" total_bugs="1" total_types="8" total_size="158" priority_2="1">
+      <ClassStats class="gui.Main" sourceFile="Main.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="gui.MainFrame" sourceFile="MainFrame.java" interface="false" size="74" bugs="1" priority_2="1"/>
+      <ClassStats class="gui.MainFrame$DepositHandler" sourceFile="MainFrame.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="gui.MainFrame$DisplayHandler" sourceFile="MainFrame.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="gui.MainFrame$FrameHandler" sourceFile="MainFrame.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="gui.MainFrame$NewAccountHandler" sourceFile="MainFrame.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="gui.MainFrame$SaveAccountsHandler" sourceFile="MainFrame.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="gui.MainFrame$WithdrawHandler" sourceFile="MainFrame.java" interface="false" size="13" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="primitive.core" total_bugs="2" total_types="8" total_size="256" priority_2="1" priority_1="1">
+      <ClassStats class="primitive.core.Account" sourceFile="Account.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="primitive.core.Account$State" sourceFile="Account.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="primitive.core.AccountServer" sourceFile="AccountServer.java" interface="true" size="7" bugs="0"/>
+      <ClassStats class="primitive.core.AccountServerFactory" sourceFile="AccountServerFactory.java" interface="false" size="13" bugs="1" priority_2="1"/>
+      <ClassStats class="primitive.core.AccountServerTest" sourceFile="AccountServerTest.java" interface="false" size="52" bugs="0"/>
+      <ClassStats class="primitive.core.Checking" sourceFile="Checking.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="primitive.core.Savings" sourceFile="Savings.java" interface="false" size="30" bugs="0"/>
+      <ClassStats class="primitive.core.ServerSolution" sourceFile="ServerSolution.java" interface="false" size="78" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1767" invocations="1504" avgMicrosecondsPerInvocation="1175" maxMicrosecondsPerInvocation="81116" standardDeviationMircosecondsPerInvocation="3099"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="1349" invocations="2" avgMicrosecondsPerInvocation="674722" maxMicrosecondsPerInvocation="703813" standardDeviationMircosecondsPerInvocation="29091"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="969" invocations="309" avgMicrosecondsPerInvocation="3137" maxMicrosecondsPerInvocation="51798" standardDeviationMircosecondsPerInvocation="6102"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="903" invocations="309" avgMicrosecondsPerInvocation="2922" maxMicrosecondsPerInvocation="34238" standardDeviationMircosecondsPerInvocation="5281"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="509" invocations="706" avgMicrosecondsPerInvocation="721" maxMicrosecondsPerInvocation="8661" standardDeviationMircosecondsPerInvocation="835"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="486" invocations="1507" avgMicrosecondsPerInvocation="322" maxMicrosecondsPerInvocation="2556" standardDeviationMircosecondsPerInvocation="149"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="260" invocations="309" avgMicrosecondsPerInvocation="843" maxMicrosecondsPerInvocation="15901" standardDeviationMircosecondsPerInvocation="1618"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="193" invocations="309" avgMicrosecondsPerInvocation="626" maxMicrosecondsPerInvocation="35176" standardDeviationMircosecondsPerInvocation="3468"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="184" invocations="373" avgMicrosecondsPerInvocation="495" maxMicrosecondsPerInvocation="43650" standardDeviationMircosecondsPerInvocation="2329"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="181" invocations="309" avgMicrosecondsPerInvocation="587" maxMicrosecondsPerInvocation="10442" standardDeviationMircosecondsPerInvocation="1004"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="181" invocations="309" avgMicrosecondsPerInvocation="586" maxMicrosecondsPerInvocation="28948" standardDeviationMircosecondsPerInvocation="1829"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="178" invocations="309" avgMicrosecondsPerInvocation="578" maxMicrosecondsPerInvocation="16618" standardDeviationMircosecondsPerInvocation="1359"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="156" invocations="62" avgMicrosecondsPerInvocation="2530" maxMicrosecondsPerInvocation="18953" standardDeviationMircosecondsPerInvocation="4132"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="156" invocations="64" avgMicrosecondsPerInvocation="2444" maxMicrosecondsPerInvocation="28221" standardDeviationMircosecondsPerInvocation="5167"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="150" invocations="65" avgMicrosecondsPerInvocation="2315" maxMicrosecondsPerInvocation="28330" standardDeviationMircosecondsPerInvocation="4697"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1456693257329" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

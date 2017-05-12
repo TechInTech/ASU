@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../.resources/report.gif" type="image/gif"/><title>MagicSquareTestC1C2.java</title><link rel="stylesheet" href="../../../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../.sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">Main (Apr 23, 2016 4:02:49 PM)</a> &gt; <a href="../../index.html" class="el_group">MagicSquare</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">test</a> &gt; <span class="el_source">MagicSquareTestC1C2.java</span></div><h1>MagicSquareTestC1C2.java</h1><pre class="source lang-java linenums">package test;
+
+import static org.junit.Assert.*;
+
+import java.util.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+import core.MagicSquare;
+
+@SuppressWarnings(&quot;unused&quot;)
+<span class="nc" id="L14">public class MagicSquareTestC1C2 {	</span>
+	private MagicSquare mSquareTest;
+	private MagicSquare mS1;
+	private MagicSquare mS2;	
+
+	@Before
+	public void setUp() throws Exception {
+<span class="nc" id="L21">		ArrayList&lt;Integer&gt; nList = new ArrayList&lt;Integer&gt;(Arrays.asList(8, 1, 6, 3, 5, 7, 4, 9, 2));</span>
+<span class="nc" id="L22">		mSquareTest = new MagicSquare(nList);</span>
+<span class="nc" id="L23">	}</span>
+
+	@After
+	public void tearDown() throws Exception {
+<span class="nc" id="L27">		mSquareTest = null;</span>
+<span class="nc" id="L28">		mS1 = null;</span>
+<span class="nc" id="L29">		mS2 = null;</span>
+<span class="nc" id="L30">	}</span>
+	
+	//Practicing assertEquals() and assertTrue/False() calls
+	
+	@Test
+	public void testIsValidP() { //Passing case
+<span class="nc" id="L36">		ArrayList&lt;Integer&gt; numbList = new ArrayList&lt;Integer&gt;(Arrays.asList(8, 1, 6, 3, 5, 7, 4, 9, 2));</span>
+<span class="nc" id="L37">		mS1 = new MagicSquare(numbList); //Initialize object with a list</span>
+<span class="nc" id="L38">		boolean expAns = true;</span>
+<span class="nc" id="L39">		boolean actAns = mS1.isValid();</span>
+<span class="nc" id="L40">		assertEquals(expAns, actAns);</span>
+<span class="nc" id="L41">	}</span>
+
+	@Test
+	public void testIsMagicP() { //Passing case
+<span class="nc" id="L45">		ArrayList&lt;Integer&gt; numbList = new ArrayList&lt;Integer&gt;(Arrays.asList(8, 1, 6, 3, 5, 7, 4, 9, 2));</span>
+<span class="nc" id="L46">		mS1 = new MagicSquare(numbList); //Initialize object with a list</span>
+<span class="nc" id="L47">		boolean expAns = true;</span>
+<span class="nc" id="L48">		boolean actAns = mS1.isMagic();</span>
+<span class="nc" id="L49">		assertEquals(expAns, actAns);</span>
+<span class="nc" id="L50">	}</span>
+	
+	@Test
+	public void testIsValidF() { //Failing case
+<span class="nc" id="L54">		ArrayList&lt;Integer&gt; numbList = new ArrayList&lt;Integer&gt;(Arrays.asList(3, 5, 8, 1, 6, 3, 5, 7, 4, 9, 2));</span>
+<span class="nc" id="L55">		mS2 = new MagicSquare(numbList); //Initialize object with a list		</span>
+<span class="nc" id="L56">		assertFalse(mS2.isValid());</span>
+<span class="nc" id="L57">	}</span>
+
+	@Test
+	public void testIsMagicF() { //Failing case
+<span class="nc" id="L61">		ArrayList&lt;Integer&gt; numbList = new ArrayList&lt;Integer&gt;(Arrays.asList(3, 5, 8, 1, 6, 3, 5, 7, 4, 9, 2));</span>
+<span class="nc" id="L62">		mS2 = new MagicSquare(numbList); //Initialize object with a list		</span>
+<span class="nc" id="L63">		assertFalse(mS2.isMagic());</span>
+<span class="nc" id="L64">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.6.201602180812</span>Main (Apr 23, 2016 4:02:49 PM)</div></body></html>
