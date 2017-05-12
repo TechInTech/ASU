@@ -1,0 +1,56 @@
+/*
+ * Program to display an Nth-line Pascal triangle
+ * by applying recursive approach. N = 9
+ * @Hieu Pham
+ */
+
+public class PascalTriangle
+{ 
+    public static final int ROWS = 9;
+    private static int MAXLENGTH = 0;
+
+    public static void main(String[] args)
+    { 
+    	int stringlen = 0;
+        int[][] pascaltriangle  = new int[ROWS +1][];
+        
+        pascaltriangle[1] = new int[3];
+        pascaltriangle[1][1] = 1;
+        
+        //Starting from the third index (0,1,2)
+        for (int i = 2; i <= ROWS; i++)
+        {
+            pascaltriangle[i] = new int[i + 2];
+            for (int j = 1; j < pascaltriangle[i].length - 1; j++)
+            {
+                pascaltriangle[i][j] = pascaltriangle[i-1][j-1] + pascaltriangle[i-1][j];
+                String ConvStr = Integer.toString(pascaltriangle[i][j]);
+                stringlen = ConvStr.length();
+                if(stringlen > MAXLENGTH) //Flip-flopping this value for printing needs
+                    MAXLENGTH = stringlen;
+            }
+        }
+
+        /*
+         * Printing spacing requires adding whitespace to certain numbers to accommodate
+         * space that larger numbers occupy. First determine what the largest number 
+		 * to be printed (Array.len) programmatically. Then determine the number of 
+		 * digits in the numbers (stringlen and MAXLENGTH). Then use this number to print
+		 * whitespace for numbers that have less digits than the largest number to give
+		 * the printing proper triangular effect.
+         * 
+         * Use the format method.
+         */
+        
+        for (int a = 1; a <= ROWS; a++)
+        {
+        	//This loop is needed for the triangular shape
+            for (int b = ROWS; b > a; b--) 
+            	//Adding spaces in triangular style
+                System.out.format("%-" + MAXLENGTH + "s", " ");
+            for (int c = 1; c < pascaltriangle[a].length - 1; c++)                      
+                System.out.format("%-" + (2 * MAXLENGTH) + "s",  pascaltriangle[a][c]);
+            System.out.println();
+        }
+    }
+}

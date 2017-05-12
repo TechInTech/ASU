@@ -1,0 +1,30 @@
+public class PascalsTriangle
+{
+	public static void main(String[] args)
+	{
+		int numbersList[] = new int[0];
+		displayNthLine(numbersList, 9);
+	} 
+
+	static void displayNthLine(int origList[], int desiredLine)
+	{ 
+
+		// calculate the next line/row of the triangle 
+		int newList[] = new int[origList.length + 1]; 
+		newList[0] = 1; // first item is always a 1 
+
+		// calculate the new internal values 
+		for (int i = 1; i < origList.length; i++) 
+			newList[i] = origList[i - 1] + origList[i]; 
+
+		newList[newList.length - 1] = 1; // last item is always a 1
+		// Display the newly calculated values on one line 
+		for (int i = 0; i < newList.length; i++)
+			System.out.print(newList[i] + " ");
+		System.out.println(); // end of the line 
+
+		// repeat the process if we are not done. 
+		if(newList.length < desiredLine) 
+			displayNthLine(newList, desiredLine); 
+	} 
+} 

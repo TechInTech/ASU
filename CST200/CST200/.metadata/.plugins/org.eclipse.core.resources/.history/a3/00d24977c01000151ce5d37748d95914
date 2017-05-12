@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class StudentCollect
+{
+	 public static void main(String[] args)
+	 {
+		 	// create the student list
+	        List<Student> firstStudent = new ArrayList<Student>(); 
+	       
+
+	        // Print the name from the list....
+	        for(Student thestudent : firstStudent)
+	        {
+	            System.out.println(thestudent.getName());
+	        }
+	 }
+
+}

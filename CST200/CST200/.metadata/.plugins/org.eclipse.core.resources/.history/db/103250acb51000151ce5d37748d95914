@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class StudentCollect
+{
+	 public static void main(String[] args)
+	 {
+		 	// create the student list
+	        List<Student> firstStudent = new ArrayList<Student>("Ron Reagan",22,"121-32-5476","President"); 
+	        List<Student> secondStudent = new ArrayList<Student>();
+	        List<Student> thirdStudent = new ArrayList<Student>();
+	        List<Student> fourthStudent = new ArrayList<Student>();
+	        List<Student> fifthStudent = new ArrayList<Student>();
+	        List<Student> sixthStudent = new ArrayList<Student>();
+	        List<Student> seventhStudent = new ArrayList<Student>();
+	        List<Student> eighthStudent = new ArrayList<Student>();
+	        List<Student> ninthStudent = new ArrayList<Student>();
+	        List<Student> tenthStudent = new ArrayList<Student>();
+	        List<Student> eleventhStudent = new ArrayList<Student>();
+	        List<Student> twelvethStudent = new ArrayList<Student>();
+
+	        // Print the name from the list....
+	        for(Student thestudent : firstStudent)
+	        {
+	            System.out.println(thestudent.getName());
+	        }
+	 }
+
+}

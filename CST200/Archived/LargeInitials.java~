@@ -1,0 +1,22 @@
+public class LargeInitials
+{
+	public static void main (String[] args)
+	{
+		System.out.println("\n\n");
+		System.out.println("\tHHHHHH\t\tHHHHHH\t\t" + "QQQQQQQQQQQ\t\t" + "PPPPPPPPPP");
+		System.out.println("\tHHHHHH\t\tHHHHHH\t\t" + "QQQQQQQQQQQ\t\t" + "PPPPPPPPPP");
+		System.out.println("\t HHHH\t\t HHHH\t\t" + "QQQ     QQQ\t\t" + "PPP    PPP");
+		System.out.println("\t HHHH\t\t HHHH\t\t" + "QQQ     QQQ\t\t" + "PPP    PPP");
+		System.out.println("\t HHHH\t\t HHHH\t\t" + "QQQ     QQQ\t\t" + "PPP    PPP");
+		System.out.println("\t HHHH\t\t HHHH\t\t" + "QQQ     QQQ\t\t" + "PPP    PPP");
+		System.out.println("\t HHHHHHHHHHHHHHHHHHHH\t\t" + "QQQ     QQQ\t\t" + "PPP    PPP");
+		System.out.println("\t HHHHHHHHHHHHHHHHHHHH\t\t" + "QQQ     QQQ\t\t" + "PPPPPPPPPP");
+		System.out.println("\t HHHH\t\t HHHH\t\t" + "QQQ     QQQ\t\t" + "PPPPPPPPPP");
+		System.out.println("\t HHHH\t\t HHHH\t\t" + "QQQ     QQQ\t\t" + "PPP       ");
+		System.out.println("\t HHHH\t\t HHHH\t\t" + "QQQ    QQQQ\t\t" + "PPP       ");
+		System.out.println("\t HHHH\t\t HHHH\t\t" + "QQQ    QQQQ \t\t" + "PPP       ");
+		System.out.println("\tHHHHHH\t\tHHHHHH\t\t" + "QQQQQQQQQQQQ\t\t" + "PPP       ");
+		System.out.println("\tHHHHHH\t\tHHHHHH\t\t" + "QQQQQQQQ  QQ\t\t" + "PPP       \n\n");
+	}
+
+}

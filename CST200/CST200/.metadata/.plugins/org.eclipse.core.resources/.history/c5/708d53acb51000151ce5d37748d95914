@@ -1,0 +1,65 @@
+import java.util.*;
+
+public class Student
+{
+	private String name;
+	private int age;
+	private String SSN;
+	private String Duty;
+	
+	public Student() // Constructor, default
+	{
+		this.name = "nobody";
+		this.age = 9;
+		this.SSN = "123-45-6789";
+		this.Duty = "unassigned";
+	}
+	
+	public Student(String nm, int a, String ssn, String job) // Constructor with params
+	{
+		this.name = nm;
+		this.age = a;
+		this.SSN = ssn;
+		this.Duty = job;
+	}
+	
+    public String getName()
+    {
+        return(name);
+    }
+    
+    public int getAge()
+    {
+        return(age);
+    }
+    
+    public String getSSN()
+    {
+        return(SSN);
+    }
+
+    public String getDuty()
+    {
+        return(Duty);
+    }
+    
+    public void setName(String TheName)
+    {
+        this.name = TheName;
+    }
+    
+    public void setAge(int TheAge)
+    {
+        this.age = TheAge;
+    }
+    
+    public void setSSN(String TheSSN)
+    {
+        this.SSN = TheSSN;
+    }
+    
+    public void setDuty(String TheDuty)
+    {
+        this.Duty = TheDuty;
+    }    
+}

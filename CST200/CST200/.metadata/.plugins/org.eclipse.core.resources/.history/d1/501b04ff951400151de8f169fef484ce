@@ -1,0 +1,47 @@
+/*
+ * Program to display an Nth-line Pascal triangle
+ * by applying recursive approach. N = 9
+ * @Hieu Pham
+ */
+
+public class PascalTriangle
+{
+	public static void main(String[] args)
+	{
+		int IntArray[] = new int[0];
+		//There are 9 lines in the triangle
+		OutputTriangle(IntArray, 9);
+	} 
+
+	static void OutputTriangle(int Matrix[], int OutputPattern)
+	{ 
+
+		// calculate the next line/row of the triangle 
+		int MatrixCopy[] = new int[Matrix.length + 1]; 
+		MatrixCopy[0] = 1; // first item is always a 1 
+
+		// calculate the new internal values 
+		for (int a = 1; a < Matrix.length; a++) 
+			MatrixCopy[a] = Matrix[a - 1] + Matrix[a]; 
+
+		MatrixCopy[MatrixCopy.length - 1] = 1; // last item is always a 1
+		// Display the newly calculated values on one line 
+		for (int b = 0; b < MatrixCopy.length; b++)
+			System.out.print(MatrixCopy[b] + " ");
+		System.out.println(); // end of the line 
+
+		/*
+         * Printing spacing requires adding whitespace to certain numbers to accommodate
+         * space that larger numbers occupy. First determine what the largest number 
+		 * to be printed (Array.len) programmatically. Then determine the number of 
+		 * digits in the numbers (stringlen and MAXLENGTH). Then use this number to print
+		 * whitespace for numbers that have less digits than the largest number to give
+		 * the printing proper triangular effect.
+         * 
+         * Use the format method.
+         */
+		// repeat the process if we are not done. 
+		if(MatrixCopy.length < OutputPattern) 
+			OutputTriangle(MatrixCopy, OutputPattern); 
+	} 
+} 

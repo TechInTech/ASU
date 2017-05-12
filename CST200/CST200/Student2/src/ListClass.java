@@ -1,0 +1,30 @@
+import java.util.*;
+
+public class ListClass
+{
+	public static void main(String[] args)
+	{
+		List<Student2> role = new ArrayList<Student2>();
+		
+		role.add(new Student2("Hieu Pham","121-32-5476","President",30));
+		role.add(new Student2("Anurag Gupta","272-61-9076","Vice President",38));
+		role.add(new Student2("Duoc Lingur","193-85-5938","Secretary",24));
+		role.add(new Student2("Pat Orangatan","731-46-7361","Treasury",39));
+		role.add(new Student2("Owen Chimph","813-20-7016","Security",27));
+		role.add(new Student2("Laura Primativa","453-71-9499","Group 1 Advisor",34));
+		role.add(new Student2("Vicky Apian","335-88-3819","Group 2 Advisor",26));
+		role.add(new Student2("Larry Babunez","646-17-1174","Crowd Control",33));
+		role.add(new Student2("George Apeh","775-18-5838","Crowd Control",42));
+		role.add(new Student2("Elizabeth Kangruez","992-49-7949","Auditor",32));
+		
+		Iterator<Student2> iTer = role.iterator();
+		System.out.println("Using an explicit iterator...");
+		System.out.println();
+		while(iTer.hasNext())
+		{
+			  Student2 s2 = iTer.next();
+			  System.out.println(s2.name + ", " + s2.SSN + ", " + s2.Duty + ", " + s2.age);			  
+		}
+		
+	}
+}

@@ -1,0 +1,6 @@
+A binary search tree has the ordering property that the left child
+of any node is less than the node, and the node is less than or equal
+to its right child.
+
+A minheap is complete and has the ordering property
+that the node is less than both of this children.

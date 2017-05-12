@@ -1,0 +1,4 @@
+The LinkedBinarySearchTree class is currently using the find and contains
+methods Of the LinkedBinaryTree class. Implement these methods for the
+LinkedBinarySearchTree class so that they will be more efficient by
+making use of the ordering property of a binary search tree.

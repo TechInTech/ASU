@@ -1,0 +1,51 @@
+"""
+Author: Hieu Pham
+ID: 0953-827
+Section: B
+Date: 10/16/2014
+
+Given current time in 24 hour format
+and hours to wait, set off the alarm
+when time to wait is up.
+
+Useful facts:
+   A = (0.50) * (x1 + x2) * h
+   where A is the computed area, x1, x2 are top and
+   bottom lengths, and  h is the height.
+   
+
+"""
+
+# include math library object for math operations.
+import math
+
+days = [0,1,2,3,4,5,6]
+wdays = ("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+
+def wkdaycheck() :
+    theday = int(input("Enter the current day of the week today: "))
+    if (theday < 0) or (theday > 6):
+        return None
+    else:
+        return theday
+
+# Request the input => varname = float(input("message: "))
+print("\nLength of stay program")
+print("Format: 0 = Sunday, 1 = Monday,...,6 = Saturday\n")
+yourday = wkdaycheck()
+
+if (yourday == None):
+    yourday = wkdaycheck()
+
+stay_time = int(input("How many days are you staying? "))
+
+if (stay_time <= 7) : # processing stay time within one week
+    totalTime = (yourday + stay_time) - 7
+    print("You will return on: ",wdays[totalTime]," of this week.")
+else :
+    nDay   = ((yourday + stay_time) // 7)
+    nwDays = ((yourday + stay_time) % 7)
+    print("You will return after ",nDay," weeks", " on a ",wdays[nwDays])
+
+
+

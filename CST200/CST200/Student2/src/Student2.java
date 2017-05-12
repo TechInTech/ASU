@@ -1,0 +1,59 @@
+/*
+ *Simple collection with built-in array
+ *@Hieu Pham
+ */
+public class Student2
+{
+	public String name, SSN, Duty;
+	public int age;
+	
+	
+	public Student2(String nm, String ssn, String jb, int a) // Constructor, default
+	{
+		this.name = nm;		
+		this.SSN = ssn;
+		this.Duty = jb;
+		this.age = a;
+	}	
+	
+    public String getName()
+    {
+        return(name);
+    }
+    
+    public int getAge()
+    {
+        return(age);
+    }
+    
+    public String getSSN()
+    {
+        return(SSN);
+    }
+
+    public String getDuty()
+    {
+        return(Duty);
+    }
+    
+    public void setName(String TheName)
+    {
+        this.name = TheName;
+    }
+    
+    public void setAge(int TheAge)
+    {
+        this.age = TheAge;
+    }
+    
+    public void setSSN(String TheSSN)
+    {
+        this.SSN = TheSSN;
+    }
+    
+    public void setDuty(String TheDuty)
+    {
+        this.Duty = TheDuty;
+    }    
+}
+

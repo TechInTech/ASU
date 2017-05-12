@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1445038898 source:f:\cppiohad\rps\main.cpp
+	<iostream>
+	<cmath>
+	<cstdlib>
+

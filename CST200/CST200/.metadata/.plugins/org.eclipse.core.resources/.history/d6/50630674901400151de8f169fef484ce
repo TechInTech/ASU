@@ -1,0 +1,61 @@
+/*
+ * Program to display an Nth-line Pascal triangle
+ * by applying recursive approach. N = 9
+ * @Hieu Pham
+ */
+public class PascalTriangle
+{
+	public static final int ROWS = 8;
+	private static int MAX = 0;
+	
+	public static void main(String[] args)
+	{
+		//Apply this trick to avoid null pointer exception.
+		int IntArray[] = new int[0];
+		
+		//There are 9 lines in the given triangle
+		OutputTriangle(IntArray, 9);
+	} 
+
+	static void OutputTriangle(int Matrix[], int Lines)
+	{ 
+
+		// Computing the triangle's next row
+		//First and last items must always be 1's
+		int len = 0;
+		int rows = Lines;
+		int MatrixCopy[] = new int[Matrix.length + 1]; 
+		MatrixCopy[0] = 1; //First item
+
+		//Format string
+		//for(int c = 0; c < rows; c++)
+		//{
+			//System.out.format("%"+(rows-c)*2+"s","");
+			// Computing interior values 
+			for (int a = 1; a < Matrix.length; a++)
+			{
+				MatrixCopy[a] = Matrix[a - 1] + Matrix[a];				
+			}
+			MatrixCopy[MatrixCopy.length - 1] = 1; //Last item
+		
+			// Outputs calculated values to a single line 
+			for (int b = 0; b < MatrixCopy.length; b++)
+			{
+				//System.out.format("%4d",MatrixCopy[b]);
+				//System.out.print(MatrixCopy[b] + " ");
+				String str = Integer.toString(MatrixCopy[b]);//For printing
+                len = str.length();
+                if (len > MAX)
+                    MAX = len;
+                
+                System.out.format("%-" + MAX + "s", " ");
+                System.out.format("%-" + (2*MAX) + "s",  MatrixCopy[b]);
+			}
+			System.out.println(); // Adding next line 
+		//}
+		
+		// Processing recursively until finish. 
+		if(MatrixCopy.length < Lines) 
+			OutputTriangle(MatrixCopy, Lines); 
+	} 
+} 

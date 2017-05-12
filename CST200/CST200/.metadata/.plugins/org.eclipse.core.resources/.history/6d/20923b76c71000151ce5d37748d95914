@@ -1,0 +1,10 @@
+import java.util.*;
+
+public class ListClass
+{
+	public static void main(String[] args)
+	{
+		List<Student2> role = new ArrayList<Student2>();
+		
+	}
+}

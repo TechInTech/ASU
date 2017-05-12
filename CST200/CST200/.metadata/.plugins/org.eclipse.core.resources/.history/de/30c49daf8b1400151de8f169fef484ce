@@ -1,0 +1,38 @@
+/*
+ * Program to display an Nth-line Pascal triangle
+ * by applying recursive approach
+ * @Hieu Pham
+ */
+public class PascalTriangle
+{
+	public static void main(String[] args)
+	{
+		int IntArray[] = new int[0];
+		//There are 9 lines in the triangle
+		OutputTriangle(IntArray, 9);
+	} 
+
+	static void OutputTriangle(int Matrix[], int OutputPattern)
+	{ 
+
+		// Computing the triangle's next row
+		//First and last items must always be 1's
+		int MatrixCopy[] = new int[Matrix.length + 1]; 
+		MatrixCopy[0] = 1; 
+
+		// Computing internal values 
+		for (int a = 1; a < Matrix.length; a++) 
+			MatrixCopy[a] = Matrix[a - 1] + Matrix[a]; 
+
+		MatrixCopy[MatrixCopy.length - 1] = 1;
+		
+		// Outputs calculated values to a single line 
+		for (int b = 0; b < MatrixCopy.length; b++)
+			System.out.print(MatrixCopy[b] + " ");
+		System.out.println(); // Adding next line 
+
+		// Processing recursively until finish. 
+		if(MatrixCopy.length < OutputPattern) 
+			OutputTriangle(MatrixCopy, OutputPattern); 
+	} 
+} 
